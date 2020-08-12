@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 765841d09eb8b164a937f9878a184f13
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en
+  stringIDs: []
+  compilationStatus: 0
+  isSuccesfullyCompiled: 0
+  compilationErrorMessage: "Error on line 10 at position 30:token recognition error
+    at: '?'\r\n"
+  baseLanguage: {instanceID: 0}
+  localizations: []

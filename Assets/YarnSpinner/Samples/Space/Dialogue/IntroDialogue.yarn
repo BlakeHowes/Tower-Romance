@@ -1,0 +1,53 @@
+title: Start
+tags: 
+colorID: 0
+position: 41,85
+---
+Regal Voice: Hello and welcome to the wondrous world of Faelyn, can I help you with anything?
+
+[[answer:No, that all sounds terrific and I am not interested in World-building!|terrific]]
+
+[[ answer:What? Where? Who? |?]]
+===
+title: terrific
+tags: 
+colorID: 0
+position: -25,329
+---
+Regal Voice: Excellent! 
+Regal Voice: Head to the city gardens within the farthest wall, our most vital assets will be waiting to meet you.
+===
+title: ?
+tags: 
+colorID: 0
+position: 282,85
+---
+Regal Voice: We are in dire need of people that can aid the city in its hour of need.
+
+-> uh, sure
+
+Regal Voice: Mason, was it? You are uniquely qualified to repel the forces of evil...
+Regal Voice: and keep our armaments in good condition.
+
+[[ answer:Well, I guess theres no helping it. |Accept]]
+[[ answer:Why do I have to do this? |Decline]]
+===
+title: Accept
+tags: 
+colorID: 0
+position: 216,329
+---
+Regal Voice: Well then, if you aren't suffering from some sort of amnesia then there's no time to waste
+
+[[ answer:I'm not entirely sure about that? |terrific]] ]]
+===
+title: Decline
+tags: 
+colorID: 0
+position: 459,328
+---
+Regal Voice: Because you're the protagonist silly. 
+Regal Voice: We need a story to happen.
+
+[[ answer: That seems perfectly reasonable|Accept]] ]]
+===
