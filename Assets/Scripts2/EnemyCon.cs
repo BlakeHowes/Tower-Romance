@@ -9,8 +9,9 @@ public class EnemyCon : MonoBehaviour
     [SerializeField]
     private GameObject target;
 
-    void Awake()
+    void OnEnable()
     {
+        target = GameObject.FindGameObjectWithTag("Target"); //Change this out for multiple Targets
         agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(target.transform.position);
     }

@@ -31,6 +31,15 @@ public class TowerCon : MonoBehaviour
 
     private float ShootTimer;
 
+    private void Awake()
+    {
+        if(Beam != null)
+        {
+            Beam.enabled = false;
+        }
+    }
+
+    //Restructure to Only Fine Enemy before shooting
     void Update()
     {
         if(ProjectileOrBeam == false)
@@ -123,16 +132,23 @@ public class TowerCon : MonoBehaviour
             if (ShootTimer < FireDuration)
             {
                 Enemy.GetComponent<EnemyStat>().RemoveHealth(Damage);
-                //Shoot
+                Beam.enabled = true;
+                Beam.SetPosition(0,transform.position);
+                Beam.SetPosition(1, Enemy.transform.position);
             }
 
             if (ShootTimer > FireDuration)
             {
+                Beam.enabled = false;
                 if (ShootTimer > FireDuration + CoolDown)
                 {
                     ShootTimer = 0;
                 }
             }
+        }
+        else
+        {
+            Beam.enabled = false;
         }
     }
 

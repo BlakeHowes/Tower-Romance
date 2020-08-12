@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿
+
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +10,6 @@ public class MainCon : MonoBehaviour
 {
     [SerializeField]
     private float Height;
-    [SerializeField]
-    private GameObject Empty;
     public bool SelectionActive;
     [SerializeField]
     private GameObject TowerSelected;
