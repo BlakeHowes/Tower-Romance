@@ -92,9 +92,7 @@ namespace SpawnData_
                     {
                         if (SlimeGroup.SpawnRate > SlimeGroup.RateTimer)
                         {
-
-
-
+                            Instantiate(SlimeGroup.EnemyType, transform.position, Quaternion.identity);
                             SlimeGroup.RateTimer = 10;
                             SlimeGroup.Counter += 1;
                         }
