@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -105,10 +105,10 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.1
+    agentRadius: 0.2
     agentHeight: 1
-    agentSlope: 27
-    agentClimb: 0.15
+    agentSlope: 25.9
+    agentClimb: 0.14
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -4850,22 +4850,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaveDelay: 0
   WaveSpawner:
+  - Name: Test
+    Wave: 1
+    EnemyType: {fileID: 2447318289326362766, guid: 9f6e2781514a3c54eb83f6e972e411bf,
+      type: 3}
+    SpawnRate: 8.4375
+    SpawnDelay: 3
+    TotalSpawned: 10
+    Counter: 0
+    RateTimer: 10
   - Name: Basic Slime
     Wave: 1
     EnemyType: {fileID: 2447318289326362766, guid: 676974b7aca3e6348b5e62b30807aea1,
       type: 3}
     SpawnRate: 5
     SpawnDelay: 1
-    TotalSpawned: 2
-    Counter: 0
-    RateTimer: 10
-  - Name: Fast Slime
-    Wave: 2
-    EnemyType: {fileID: 2447318289326362766, guid: c14f0a7f3533643469588710561ade82,
-      type: 3}
-    SpawnRate: 4.6875
-    SpawnDelay: 2
-    TotalSpawned: 20
+    TotalSpawned: 5
     Counter: 0
     RateTimer: 10
   - Name: Basic Slime
@@ -4884,15 +4884,6 @@ MonoBehaviour:
     SpawnRate: 5.9375
     SpawnDelay: 0
     TotalSpawned: 6
-    Counter: 0
-    RateTimer: 10
-  - Name: Slime Boss
-    Wave: 3
-    EnemyType: {fileID: 2447318289326362766, guid: 97e433f15ada16941b00f4c6b2787bdb,
-      type: 3}
-    SpawnRate: 5.9375
-    SpawnDelay: 1
-    TotalSpawned: 1
     Counter: 0
     RateTimer: 10
   WaveCounter: 1

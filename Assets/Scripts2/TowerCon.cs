@@ -73,18 +73,6 @@ public class TowerCon : MonoBehaviour
                 ShootBeam(SlimeClosestToTarget());
             }
         }
-
-        if(SlimeClosestToTarget() != null)
-        {
-            if(NearOrLeastDistance == false)
-            {
-                transform.LookAt(ClosestSlime().transform);
-            }
-            else
-            {
-                transform.LookAt(SlimeClosestToTarget().transform);
-            }
-        }
     }
 
     //Slime with least distance to target

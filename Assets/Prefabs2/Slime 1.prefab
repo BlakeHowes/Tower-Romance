@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2447318289326362772}
-  - component: {fileID: 6420869335983212287}
-  - component: {fileID: 6958174870396280664}
+  - component: {fileID: 7037280883088616573}
+  - component: {fileID: 2447318289326362770}
   - component: {fileID: 2447318289326362773}
   - component: {fileID: 2447318289326362771}
   - component: {fileID: 2447318289326362768}
@@ -31,12 +31,12 @@ Transform:
   m_GameObject: {fileID: 2447318289326362766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.99, y: 0.68, z: 0.86}
-  m_LocalScale: {x: 0.6604878, y: 0.6604878, z: 0.6604878}
+  m_LocalScale: {x: 0.19599314, y: 0.19599314, z: 0.19599314}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6420869335983212287
+--- !u!114 &7037280883088616573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d99918ecb1f2e4ba933d95d3f8f459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 2
---- !u!114 &6958174870396280664
+  Health: 5
+--- !u!114 &2447318289326362770
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,10 +132,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 4
-  m_Acceleration: 1000
+  m_Speed: 2
+  m_Acceleration: 10
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 10
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 0
