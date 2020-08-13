@@ -105,18 +105,18 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
-    agentSlope: 45
-    agentClimb: 0.4
+    agentRadius: 0.1
+    agentHeight: 1
+    agentSlope: 27
+    agentClimb: 0.15
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
-    manualCellSize: 0
-    cellSize: 0.16666667
+    manualCellSize: 1
+    cellSize: 0.1
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    accuratePlacement: 1
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 09f7d913967619e4ca6eaac2ad414240, type: 2}
@@ -1647,36 +1647,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bcc73b40a59f2148aa1a7d51a4aa87f, type: 3}
---- !u!1 &434832816
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 434832817}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &434832817
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434832816}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.08}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &449007328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7633120944788391755, guid: 3bcc73b40a59f2148aa1a7d51a4aa87f,
@@ -2008,7 +1978,7 @@ Transform:
   - {fileID: 1731403333}
   - {fileID: 1924224926}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &601496489 stripped
 Transform:
@@ -3870,7 +3840,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286109817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -0.055, z: 4}
+  m_LocalPosition: {x: -4, y: 0.34, z: 4}
   m_LocalScale: {x: 1, y: 0.11034, z: 1}
   m_Children:
   - {fileID: 1899233638}
@@ -4884,7 +4854,7 @@ MonoBehaviour:
     Wave: 1
     EnemyType: {fileID: 2447318289326362766, guid: 676974b7aca3e6348b5e62b30807aea1,
       type: 3}
-    SpawnRate: 4.6875
+    SpawnRate: 5
     SpawnDelay: 1
     TotalSpawned: 2
     Counter: 0
@@ -4998,12 +4968,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509785627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: -0.055, z: 4}
+  m_LocalPosition: {x: 4, y: 0.34, z: 4}
   m_LocalScale: {x: 1, y: 0.11034, z: 1}
   m_Children:
   - {fileID: 662170391}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1525742599
 PrefabInstance:
@@ -6717,11 +6687,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031865346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27537394, y: -0.12, z: -0.09597133}
+  m_LocalPosition: {x: 0.27537394, y: 0.275, z: -0.09597133}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2035195721 stripped
 Transform:
