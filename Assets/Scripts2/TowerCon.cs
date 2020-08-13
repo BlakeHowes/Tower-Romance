@@ -31,6 +31,14 @@ public class TowerCon : MonoBehaviour
 
     private float ShootTimer;
 
+    enum TowerType
+    {
+        Beam,
+        PiercingLine,
+        ProjectileStraight,
+        ProjectileArc
+    }
+
     private void Awake()
     {
         if(Beam != null)
@@ -161,6 +169,7 @@ public class TowerCon : MonoBehaviour
             {
                 //Shoot
                 GameObject bullet = Instantiate(Projectile, ShootOrigin.transform.position, Quaternion.identity);
+                bullet.transform.parent = null;
                 bullet.GetComponent<ProjectileCon>().Shoot(Enemy);
                 ShootTimer = 0f;
             }

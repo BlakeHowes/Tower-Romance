@@ -8,8 +8,14 @@ public class ProjectileCon : MonoBehaviour
     private float speed;
     [SerializeField]
     private float Damage;
+    [SerializeField]
+    private bool parabolicArc;
+    [SerializeField]
+    private float arcDegrees;
     private Rigidbody rb;
     private GameObject Target;
+
+    private float TotalDistance;
 
     private void Awake()
     {
@@ -17,9 +23,17 @@ public class ProjectileCon : MonoBehaviour
     }
     public void Shoot(GameObject target)
     {
-        transform.LookAt(target.transform.position);
-        rb.velocity = transform.forward * speed;
+        if(parabolicArc == false)
+        {
+            transform.LookAt(target.transform.position);
+            rb.velocity = transform.forward * speed;
+        }
+
         Target = target;
+
+        var direction = Target.transform.position - transform.position;
+        var distance = direction.magnitude;
+        TotalDistance = distance /2;
     }
 
     private void OnTriggerEnter(Collider collision)
