@@ -45,10 +45,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2447318289326362766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474b96479ca6626469cc6b4083d7614d, type: 3}
+  m_Script: {fileID: 11500000, guid: 60d99918ecb1f2e4ba933d95d3f8f459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 40
+  Health: 10
 --- !u!114 &2447318289326362770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2447318289326362766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068222dc9dbef48439d33d19b63c0341, type: 3}
+  m_Script: {fileID: 11500000, guid: eb56b3f13a3607a438a8f1b7c65ad47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
