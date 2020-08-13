@@ -14,6 +14,7 @@ public class ProjectileCon : MonoBehaviour
     private GameObject Target;
 
     private float TotalDistance;
+    [SerializeField]
     public bool Arc = false;
     [SerializeField]
     private float ArcChange;
@@ -37,13 +38,12 @@ public class ProjectileCon : MonoBehaviour
 
     public void ShootProjectileArc(GameObject target)
     {
-        Arc = true;
         Target = target;
-
+        Arc = true;
         var direction = Target.transform.position - transform.position;
         var distance = direction.magnitude;
         TotalDistance = distance;
-        ArcChange = (distance);
+        ArcChange = Mathf.Sqrt(distance);
     }
 
     private void FixedUpdate()
@@ -52,7 +52,7 @@ public class ProjectileCon : MonoBehaviour
         {
             if (Arc == true)
             {
-                ArcChange -= (TotalDistance/40);
+                ArcChange -= (TotalDistance/(10 * TotalDistance));
                 if (ArcChange < 0)
                 {
                     ArcChange = 0f;
@@ -62,6 +62,11 @@ public class ProjectileCon : MonoBehaviour
                 transform.LookAt(Target.transform.position + DirectionAndArc);
                 rb.velocity = transform.forward * speed;
             }
+        }
+
+        if(Target == null)
+        {
+            Arc = false;
         }
     }
 

@@ -109,6 +109,7 @@ MonoBehaviour:
   speed: 5
   Damage: 1
   arcDegrees: 3
+  Arc: 0
   ArcChange: 0
 --- !u!54 &7591199219373645309
 Rigidbody:
