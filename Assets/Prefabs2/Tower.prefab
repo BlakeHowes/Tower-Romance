@@ -76,18 +76,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f06280415fd79b41aa0a8b31c70e230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NearOrLeastDistance: 1
-  Note: 
-  ProjectileOrBeam: 0
-  Note2: 
-  ShootOrigin: {fileID: 106098860234134567}
-  Beam: {fileID: 0}
-  Projectile: {fileID: 4338048879499823155, guid: 9ba17f89bcf355e49acf76984eebc298,
-    type: 3}
+  Type: 2
+  WhoToTarget: 0
   Range: 3
   Damage: 0
   FireDuration: 0
   CoolDown: 0.5
+  ShootOrigin: {fileID: 106098860234134567}
+  Beam: {fileID: 0}
+  Projectile: {fileID: 4338048879499823155, guid: 9ba17f89bcf355e49acf76984eebc298,
+    type: 3}
 --- !u!33 &1837063478688105904
 MeshFilter:
   m_ObjectHideFlags: 0

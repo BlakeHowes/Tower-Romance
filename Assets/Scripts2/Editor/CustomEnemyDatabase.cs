@@ -58,6 +58,19 @@ namespace SpawnData_.Editors
                     return;
                 }
 
+                GUILayout.BeginVertical();
+                if (GUILayout.Button((""),GUILayout.Width(20), GUILayout.Height(7)))
+                {
+                    MoveUp(cnt);
+                    return;
+                }
+
+                if (GUILayout.Button((""),GUILayout.Width(20), GUILayout.Height(7)))
+                {
+                    MoveDown(cnt);
+                    return;
+                }
+                GUILayout.EndVertical();
                 GUILayout.EndHorizontal();
             }
 
@@ -78,6 +91,26 @@ namespace SpawnData_.Editors
         void InsertEnemy()
         {
             db.WaveSpawner.Insert(InsertIndex, new SpawnData());
+        }
+
+        void MoveDown(int index)
+        {
+            if(index < db.WaveSpawner.Count)
+            {
+                var item = db.WaveSpawner[index];
+                db.WaveSpawner.RemoveAt(index);
+                db.WaveSpawner.Insert(index + 1, item);
+            }
+        }
+
+        void MoveUp(int index)
+        {
+            if (index > 0)
+            {
+                var item = db.WaveSpawner[index];
+                db.WaveSpawner.RemoveAt(index);
+                db.WaveSpawner.Insert(index - 1, item);
+            }
         }
     }
 }

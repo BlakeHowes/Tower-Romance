@@ -4,21 +4,11 @@ using UnityEngine;
 
 public class TowerCon : MonoBehaviour
 {
-    [Header("TowerType")]
+    [Header("Configuration")]
     [SerializeField]
-    private bool NearOrLeastDistance;
-    [TextArea]
-    public string Note;
+    private TowerType Type = TowerType.Beam;
     [SerializeField]
-    private bool ProjectileOrBeam;
-    [TextArea]
-    public string Note2;
-    [SerializeField]
-    private GameObject ShootOrigin;
-    [SerializeField]
-    private LineRenderer Beam;
-    [SerializeField]
-    private GameObject Projectile;
+    private Targeting WhoToTarget = Targeting.Front;
     [Header("TowerStats")]
     [SerializeField]
     private float Range;
@@ -28,8 +18,16 @@ public class TowerCon : MonoBehaviour
     private float FireDuration;
     [SerializeField]
     private float CoolDown;
+    [Header("Acessories")]
+    [SerializeField]
+    private GameObject ShootOrigin;
+    [SerializeField]
+    private LineRenderer Beam;
+    [SerializeField]
+    private GameObject Projectile;
 
     private float ShootTimer;
+    private GameObject CurrentTarget;
 
     enum TowerType
     {
@@ -37,6 +35,13 @@ public class TowerCon : MonoBehaviour
         PiercingLine,
         ProjectileStraight,
         ProjectileArc
+    }
+
+    enum Targeting
+    {
+        Front,
+        Nearest,
+        HighestHealth
     }
 
     private void Awake()
@@ -47,35 +52,61 @@ public class TowerCon : MonoBehaviour
         }
     }
 
-    //Restructure to Only Fine Enemy before shooting
-    void Update()
+    //Shoots tower currently selected in TowerType enum
+    private void ShootTowerType()
     {
-        if(ProjectileOrBeam == false)
+        switch (Type)
         {
-            if(NearOrLeastDistance == false)
-            {
-                ShootProjectile(ClosestSlime());
-            }
-            else
-            {
-                ShootProjectile(SlimeClosestToTarget());
-            }
-        }
-
-        if (ProjectileOrBeam == true)
-        {
-            if (NearOrLeastDistance == false)
-            {
-                ShootBeam(ClosestSlime());
-            }
-            else
-            {
-                ShootBeam(SlimeClosestToTarget());
-            }
+            case TowerType.Beam:
+                ShootBeam();
+                break;
+            case TowerType.PiercingLine:
+                SlimeClosestToTarget();
+                break;
+            case TowerType.ProjectileStraight:
+                ShootProjectileStraight();
+                break;
+            case TowerType.ProjectileArc:
+                SlimeClosestToTarget();
+                break;
         }
     }
 
-    //Slime with least distance to target
+    //Switches between different targets
+    private GameObject FindTarget()
+    {
+        switch (WhoToTarget)
+        {
+            case Targeting.Front:
+                return SlimeClosestToTarget();
+            case Targeting.Nearest:
+                return ClosestSlime();
+            case Targeting.HighestHealth:
+                return null; // change to highest health
+            default:
+                return null;
+        }
+    }
+
+    private bool CheckIfEnemysAreInRange()
+    {
+        Collider[] Enemies = Physics.OverlapSphere(transform.position, Range);
+        if (Enemies.Length > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private void Update()
+    {
+        ShootTowerType();
+    }
+
+    //Slime with least distance to target (Front)
     private GameObject SlimeClosestToTarget()
     {
         Collider[] Enemies = Physics.OverlapSphere(transform.position, Range);
@@ -97,7 +128,7 @@ public class TowerCon : MonoBehaviour
         return EnemyNearestToTarget;
     }
 
-    //slime closest to tower
+    //slime closest to tower (Nearest)
     private GameObject ClosestSlime()
     {
         Collider[] Enemies = Physics.OverlapSphere(transform.position, Range);
@@ -119,27 +150,29 @@ public class TowerCon : MonoBehaviour
         return EnemyNearestToTarget;
     }
 
-
-    private void ShootBeam(GameObject Enemy)
+    //SingleLineRenderBeam (Beam)
+    private void ShootBeam()
     {
-        if (Enemy != null)
-        {
-            ShootTimer += Time.deltaTime;
-            if (ShootTimer < FireDuration)
-            {
-                Enemy.GetComponent<EnemyStat>().RemoveHealth(Damage);
-                Beam.enabled = true;
-                Beam.SetPosition(0,transform.position);
-                Beam.SetPosition(1, Enemy.transform.position);
-            }
+        ShootTimer += Time.deltaTime;
 
-            if (ShootTimer > FireDuration)
+        if (ShootTimer < FireDuration)
+        {
+            var Enemy = FindTarget();
+
+            Enemy.GetComponent<EnemyStat>().RemoveHealth(Damage);
+            Beam.enabled = true;
+            Beam.SetPosition(0, transform.position);
+            Beam.SetPosition(1, Enemy.transform.position);
+        }
+
+        if (ShootTimer > FireDuration)
+        {
+            Beam.enabled = false;
+            if (ShootTimer > FireDuration + CoolDown)
             {
-                Beam.enabled = false;
-                if (ShootTimer > FireDuration + CoolDown)
-                {
-                    ShootTimer = 0;
-                }
+                ShootTimer = 0;
+
+                ShootTowerType();
             }
         }
         else
@@ -148,19 +181,18 @@ public class TowerCon : MonoBehaviour
         }
     }
 
-    private void ShootProjectile(GameObject Enemy)
+    //Single striaght projectile (ProjectileStraight)
+    private void ShootProjectileStraight()
     {
-        if (Enemy != null)
+        ShootTimer += Time.deltaTime;
+        if (ShootTimer > CoolDown)
         {
-            ShootTimer += Time.deltaTime;
-            if(ShootTimer > CoolDown)
-            {
-                //Shoot
-                GameObject bullet = Instantiate(Projectile, ShootOrigin.transform.position, Quaternion.identity);
-                bullet.transform.parent = null;
-                bullet.GetComponent<ProjectileCon>().Shoot(Enemy);
-                ShootTimer = 0f;
-            }
+            var Enemy = FindTarget();
+            //Shoot
+            GameObject bullet = Instantiate(Projectile, ShootOrigin.transform.position, Quaternion.identity);
+            bullet.transform.parent = null;
+            bullet.GetComponent<ProjectileCon>().Shoot(Enemy);
+            ShootTimer = 0f;
         }
     }
 }
