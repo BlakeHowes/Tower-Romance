@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f06280415fd79b41aa0a8b31c70e230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 2
+  TypeOfTower: 2
   WhoToTarget: 0
   Range: 3
   Damage: 0

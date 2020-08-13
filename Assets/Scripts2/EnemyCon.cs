@@ -16,12 +16,14 @@ public class EnemyCon : MonoBehaviour
         agent.SetDestination(target.transform.position);
     }
 
+    //Returns distance left to target
     public float ReturnDistanceRemaing()
     {
         float DistanceRemaining = LengthOfPathToTarget(agent.path.corners);
         return DistanceRemaining;
     }
 
+    //Finds distance left to target
     public float LengthOfPathToTarget(Vector3[] points)
     {
         if (points.Length < 2) return 0;

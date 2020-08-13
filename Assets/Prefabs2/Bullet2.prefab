@@ -106,10 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ffb0f5184e6654f93d05ec0dddbbfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 5
   Damage: 1
-  parabolicArc: 1
-  arcDegrees: 0
+  arcDegrees: 3
+  ArcChange: 0
 --- !u!54 &7591199219373645309
 Rigidbody:
   m_ObjectHideFlags: 0

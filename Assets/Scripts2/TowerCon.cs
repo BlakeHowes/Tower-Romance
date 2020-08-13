@@ -6,7 +6,7 @@ public class TowerCon : MonoBehaviour
 {
     [Header("Configuration")]
     [SerializeField]
-    private TowerType Type = TowerType.Beam;
+    private TowerType TypeOfTower = TowerType.Beam;
     [SerializeField]
     private Targeting WhoToTarget = Targeting.Front;
     [Header("TowerStats")]
@@ -28,6 +28,7 @@ public class TowerCon : MonoBehaviour
 
     private float ShootTimer;
     private GameObject CurrentTarget;
+    private GameObject bullet;
 
     enum TowerType
     {
@@ -55,19 +56,19 @@ public class TowerCon : MonoBehaviour
     //Shoots tower currently selected in TowerType enum
     private void ShootTowerType()
     {
-        switch (Type)
+        switch (TypeOfTower)
         {
             case TowerType.Beam:
                 ShootBeam();
                 break;
             case TowerType.PiercingLine:
-                SlimeClosestToTarget();
+                //add this
                 break;
             case TowerType.ProjectileStraight:
                 ShootProjectileStraight();
                 break;
             case TowerType.ProjectileArc:
-                SlimeClosestToTarget();
+                ShootProjectileArc();
                 break;
         }
     }
@@ -103,7 +104,10 @@ public class TowerCon : MonoBehaviour
 
     private void Update()
     {
-        ShootTowerType();
+        if(CheckIfEnemysAreInRange() == true)
+        {
+            ShootTowerType();
+        }
     }
 
     //Slime with least distance to target (Front)
@@ -191,7 +195,21 @@ public class TowerCon : MonoBehaviour
             //Shoot
             GameObject bullet = Instantiate(Projectile, ShootOrigin.transform.position, Quaternion.identity);
             bullet.transform.parent = null;
-            bullet.GetComponent<ProjectileCon>().Shoot(Enemy);
+            bullet.GetComponent<ProjectileCon>().ShootProjectileStraight(Enemy);
+            ShootTimer = 0f;
+        }
+    }
+
+    private void ShootProjectileArc()
+    {
+        ShootTimer += Time.deltaTime;
+        if (ShootTimer > CoolDown)
+        {
+            var Enemy = FindTarget();
+            //Shoot
+            bullet = Instantiate(Projectile, ShootOrigin.transform.position, Quaternion.identity);
+            bullet.transform.parent = null;
+            bullet.GetComponent<ProjectileCon>().ShootProjectileArc(Enemy);
             ShootTimer = 0f;
         }
     }

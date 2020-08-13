@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 1837063478688105917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 0.64, z: -3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.36853, y: 1.2878649, z: 0.36853}
   m_Children:
   - {fileID: 7086008640092076755}
   m_Father: {fileID: 0}
@@ -76,18 +76,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f06280415fd79b41aa0a8b31c70e230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NearOrLeastDistance: 1
-  Note: 
-  ProjectileOrBeam: 0
-  Note2: 
-  ShootOrigin: {fileID: 106098860234134567}
-  Beam: {fileID: 0}
-  Projectile: {fileID: 4338048879499823155, guid: 807c3cc31ae71a348a9a840314de6a18,
-    type: 3}
+  TypeOfTower: 3
+  WhoToTarget: 0
   Range: 10
   Damage: 0
   FireDuration: 0
   CoolDown: 0.5
+  ShootOrigin: {fileID: 106098860234134567}
+  Beam: {fileID: 0}
+  Projectile: {fileID: 4338048879499823155, guid: 807c3cc31ae71a348a9a840314de6a18,
+    type: 3}
 --- !u!33 &1837063478688105904
 MeshFilter:
   m_ObjectHideFlags: 0
