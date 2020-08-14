@@ -25,25 +25,25 @@ public class ProjectileCon : MonoBehaviour
 
     public void ShootProjectileStraight(GameObject target)
     {
-        transform.LookAt(target.transform.position);
-        rb.velocity = transform.forward * speed;
-        Target = target;
-
-        /*
-        var direction = Target.transform.position - transform.position;
-        var distance = direction.magnitude;
-        TotalDistance = distance /2;
-        */
+        if(target != null)
+        {
+            transform.LookAt(target.transform.position);
+            rb.velocity = transform.forward * speed;
+            Target = target;
+        }
     }
 
     public void ShootProjectileArc(GameObject target)
     {
-        Target = target;
-        Arc = true;
-        var direction = Target.transform.position - transform.position;
-        var distance = direction.magnitude;
-        TotalDistance = distance;
-        ArcChange = Mathf.Sqrt(distance);
+        if(target != null)
+        {
+            Target = target;
+            Arc = true;
+            var direction = Target.transform.position - transform.position;
+            var distance = direction.magnitude;
+            TotalDistance = distance;
+            ArcChange = distance/ arcDegrees;
+        }
     }
 
     private void FixedUpdate()
@@ -52,7 +52,7 @@ public class ProjectileCon : MonoBehaviour
         {
             if (Arc == true)
             {
-                ArcChange -= (TotalDistance/(10 * TotalDistance));
+                ArcChange -= (TotalDistance/(10 * TotalDistance) /(arcDegrees));
                 if (ArcChange < 0)
                 {
                     ArcChange = 0f;

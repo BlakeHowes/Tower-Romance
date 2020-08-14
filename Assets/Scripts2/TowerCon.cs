@@ -91,7 +91,8 @@ public class TowerCon : MonoBehaviour
 
     private bool CheckIfEnemysAreInRange()
     {
-        Collider[] Enemies = Physics.OverlapSphere(transform.position, Range);
+        LayerMask layermask = LayerMask.GetMask("Slime");
+        Collider[] Enemies = Physics.OverlapSphere(transform.position, Range, layermask);
         if (Enemies.Length > 0)
         {
             return true;
@@ -108,25 +109,31 @@ public class TowerCon : MonoBehaviour
         {
             ShootTowerType();
         }
+        else
+        {
+            if(Beam != null)
+            {
+                Beam.enabled = false;
+            }
+        }
+
     }
 
     //Slime with least distance to target (Front)
     private GameObject SlimeClosestToTarget()
     {
-        Collider[] Enemies = Physics.OverlapSphere(transform.position, Range);
+        LayerMask layermask = LayerMask.GetMask("Slime");
+        Collider[] Enemies = Physics.OverlapSphere(transform.position, Range, layermask);
 
         GameObject EnemyNearestToTarget = null;
         float nearestDistance = Mathf.Infinity;
         foreach (var Slime in Enemies)
         {
-            if (Slime.gameObject.tag == "Slime")
+            var sqrdistance = Slime.GetComponent<EnemyCon>().ReturnDistanceRemaing();
+            if (sqrdistance < nearestDistance)
             {
-                var sqrdistance = Slime.GetComponent<EnemyCon>().ReturnDistanceRemaing();
-                if (sqrdistance < nearestDistance)
-                {
-                    nearestDistance = sqrdistance;
-                    EnemyNearestToTarget = Slime.gameObject;
-                }
+                nearestDistance = sqrdistance;
+                EnemyNearestToTarget = Slime.gameObject;
             }
         }
         return EnemyNearestToTarget;
@@ -135,20 +142,18 @@ public class TowerCon : MonoBehaviour
     //slime closest to tower (Nearest)
     private GameObject ClosestSlime()
     {
-        Collider[] Enemies = Physics.OverlapSphere(transform.position, Range);
+        LayerMask layermask = LayerMask.GetMask("Slime");
+        Collider[] Enemies = Physics.OverlapSphere(transform.position, Range, layermask);
 
         GameObject EnemyNearestToTarget = null;
         float nearestDistance = Mathf.Infinity;
         foreach (var Slime in Enemies)
         {
-            if (Slime.gameObject.tag == "Slime")
+            var sqrdistance = (transform.position - Slime.transform.position).sqrMagnitude;
+            if (sqrdistance < nearestDistance)
             {
-                var sqrdistance = (transform.position - Slime.transform.position).sqrMagnitude;
-                if (sqrdistance < nearestDistance)
-                {
-                    nearestDistance = sqrdistance;
-                    EnemyNearestToTarget = Slime.gameObject;
-                }
+                nearestDistance = sqrdistance;
+                EnemyNearestToTarget = Slime.gameObject;
             }
         }
         return EnemyNearestToTarget;
@@ -165,7 +170,7 @@ public class TowerCon : MonoBehaviour
 
             Enemy.GetComponent<EnemyStat>().RemoveHealth(Damage);
             Beam.enabled = true;
-            Beam.SetPosition(0, transform.position);
+            Beam.SetPosition(0, ShootOrigin.transform.position);
             Beam.SetPosition(1, Enemy.transform.position);
         }
 
@@ -178,10 +183,6 @@ public class TowerCon : MonoBehaviour
 
                 ShootTowerType();
             }
-        }
-        else
-        {
-            Beam.enabled = false;
         }
     }
 
@@ -212,5 +213,10 @@ public class TowerCon : MonoBehaviour
             bullet.GetComponent<ProjectileCon>().ShootProjectileArc(Enemy);
             ShootTimer = 0f;
         }
+    }
+
+    private void ShootBeamSingleShot()
+    {
+
     }
 }

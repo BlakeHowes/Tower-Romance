@@ -5,10 +5,10 @@ using UnityEngine;
 public class MainCon : MonoBehaviour
 {
     [SerializeField]
-    private float Height;
     public bool SelectionActive;
     [SerializeField]
     private GameObject TowerSelected;
+    private bool SpriteisOff = true;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -20,8 +20,7 @@ public class MainCon : MonoBehaviour
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, layermask))
                 {
-                    Vector3 AddHeight = new Vector3(0f, Height, 0f);
-                    Instantiate(TowerSelected, hit.transform.position + AddHeight, Quaternion.identity);
+                    Instantiate(TowerSelected, hit.transform.position, Quaternion.identity);
                     SelectionActive = false;
                 }
                 else
@@ -33,6 +32,23 @@ public class MainCon : MonoBehaviour
             if(SelectionActive == false)
             {
                 //Highlight Tower
+            }
+        }
+
+        if(SelectionActive == true)
+        {
+            if(SpriteisOff == true)
+            {
+                SpriteManager.instance.TurnOnGridSprites();
+                SpriteisOff = false;
+            }
+        }
+        else
+        {
+            if (SpriteisOff == false)
+            {
+                SpriteManager.instance.TurnOffGridSprites();
+                SpriteisOff = true;
             }
         }
     }
