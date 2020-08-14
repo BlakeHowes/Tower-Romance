@@ -12,11 +12,6 @@ public class SpriteManager : MonoBehaviour
         instance = this;
     }
 
-    private void Start()
-    {
-        TurnOffGridSprites();
-    }
-
     public void TurnOnGridSprites()
     {
         foreach(SpriteRenderer gridSprite in GridSprites)

@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1837063478688105904}
   - component: {fileID: 1837063478688105919}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: Tower 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,10 +79,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TypeOfTower: 2
   WhoToTarget: 0
-  Range: 3
+  Range: 5
   Damage: 0
   FireDuration: 0
-  CoolDown: 0.5
+  CoolDown: 0.1
   ShootOrigin: {fileID: 106098860234134567}
   Beam: {fileID: 0}
   Projectile: {fileID: 4338048879499823155, guid: 9ba17f89bcf355e49acf76984eebc298,
@@ -200,6 +200,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8619199680118804616, guid: fa8ae9afd7bd535489cb95cb648f5dee,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d9c5c927280f954982e5fb2478c8bfd, type: 2}
+    - target: {fileID: 8619199680118804616, guid: fa8ae9afd7bd535489cb95cb648f5dee,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e792f985b34eed40a6614edb16c80b5, type: 2}
+    - target: {fileID: 8619199680118804616, guid: fa8ae9afd7bd535489cb95cb648f5dee,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e792f985b34eed40a6614edb16c80b5, type: 2}
+    - target: {fileID: 6103724895613154004, guid: fa8ae9afd7bd535489cb95cb648f5dee,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e792f985b34eed40a6614edb16c80b5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa8ae9afd7bd535489cb95cb648f5dee, type: 3}
 --- !u!4 &1711078037326321637 stripped
