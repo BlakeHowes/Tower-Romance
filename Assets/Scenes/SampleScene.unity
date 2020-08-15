@@ -3034,8 +3034,8 @@ MonoBehaviour:
   speed: 1.5
   OribtSpeed: 3
   Scrollspeed: 13
-  MinZoom: 0
-  MaxZoom: 1000
+  MinZoom: 10
+  MaxZoom: 50
   Sensitivity: 17
 --- !u!1 &965785324
 GameObject:
