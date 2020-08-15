@@ -1481,7 +1481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectionActive: 0
-  TowerSelected: {fileID: 0}
+  TowerSelectedForPlacement: {fileID: 0}
+  CameraTarget: {fileID: 2045614287}
 --- !u!4 &381727603
 Transform:
   m_ObjectHideFlags: 0
@@ -2970,7 +2971,7 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.109803915, g: 0.2222221, b: 0.32941177, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
@@ -2984,7 +2985,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 10.053165
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -3009,13 +3010,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.21060614, y: -0.28276953, z: 0.07911599, w: 0.9324308}
-  m_LocalPosition: {x: 25.2, y: 22.3, z: -37.7}
+  m_LocalRotation: {x: 0.33168513, y: -0, z: -0, w: 0.94339013}
+  m_LocalPosition: {x: -1.2599998, y: 26.61, z: -34.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 25.944002, y: -33.324, z: 1.812}
+  m_LocalEulerAnglesHint: {x: 38.742, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3028,8 +3029,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 794778233ffddc54aa9d9149effc7a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PanOrbitToggle: 0
   Target: {fileID: 2045614287}
-  speed: 5
+  speed: 1.5
+  OribtSpeed: 3
+  Scrollspeed: 13
   MinZoom: 0
   MaxZoom: 1000
   Sensitivity: 17
