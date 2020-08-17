@@ -7,6 +7,8 @@ namespace SpawnData_
     public class SpawnCon : MonoBehaviour
     {
         [SerializeField]
+        private float spawnDirection;
+        [SerializeField]
         public float WaveDelay;
         [SerializeField]
         public List<SpawnData> WaveSpawner = new List<SpawnData>();
@@ -92,7 +94,8 @@ namespace SpawnData_
                     {
                         if (SlimeGroup.SpawnRate > SlimeGroup.RateTimer)
                         {
-                            Instantiate(SlimeGroup.EnemyType, transform.position, Quaternion.identity);
+                            Quaternion Spawndirection = Quaternion.Euler(0f, spawnDirection, 0f);
+                            Instantiate(SlimeGroup.EnemyType, transform.position, Spawndirection);
                             SlimeGroup.RateTimer = 10;
                             SlimeGroup.Counter += 1;
                         }

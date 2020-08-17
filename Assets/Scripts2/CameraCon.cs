@@ -40,13 +40,20 @@ public class CameraCon : MonoBehaviour
 
         if (PanOrbitToggle == true)
         {
+            if(SwitchtoPan == false)
+            {
+                fov = 10;
+                Camera.main.fieldOfView = fov;
+                transform.LookAt(Target.transform.position);
+                SwitchtoPan = true;
+            }
+
             if (Input.GetMouseButton(2))
             {
                 transform.RotateAround(Target.transform.position, transform.up, Input.GetAxis("Mouse X") * OribtSpeed);
                 transform.RotateAround(Target.transform.position, transform.right, Input.GetAxis("Mouse Y") * -OribtSpeed);
                 transform.LookAt(Target.transform.position);
             }
-            SwitchtoPan = true;
         }
         else
         {

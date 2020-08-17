@@ -13,6 +13,7 @@ public class MainCon : MonoBehaviour
 
     private bool OrbitMode = false;
     private bool SpriteisOff = true;
+    private GameObject HighlightedObject;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -24,7 +25,9 @@ public class MainCon : MonoBehaviour
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, layermask))
                 {
-                    //SetZoom and position
+                    HighlightedObject = hit.transform.gameObject;
+                    hit.transform.gameObject.GetComponent<Outline>().enabled = true;
+
                     Debug.Log("TowerHit");
                     OrbitMode = true;
                     CameraTarget.transform.position = hit.transform.position;
@@ -32,6 +35,11 @@ public class MainCon : MonoBehaviour
                 }
                 else
                 {
+                    if(HighlightedObject != null)
+                    {
+                        HighlightedObject.GetComponent<Outline>().enabled = false;
+                    }
+
                     if (OrbitMode == true)
                     {
                         Camera.main.GetComponent<CameraCon>().SwitchToPan();
