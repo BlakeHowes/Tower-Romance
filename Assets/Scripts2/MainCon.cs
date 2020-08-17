@@ -54,6 +54,7 @@ public class MainCon : MonoBehaviour
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, layermask))
                 {
+                    hit.transform.gameObject.layer = 11;
                     Instantiate(TowerSelectedForPlacement, hit.transform.position, Quaternion.identity);
                     SelectionActive = false;
                 }
