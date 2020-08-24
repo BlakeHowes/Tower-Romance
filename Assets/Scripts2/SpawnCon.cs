@@ -24,16 +24,22 @@ namespace SpawnData_
         private bool CheckIfTheresAnySlimesStillSpawning = true;
         [SerializeField]
         private float CheckSlimesLeftTimer;
-        private int LastWave;
 
+        private int LastWave;
+        [SerializeField]
+        private float CountTotalSlimesLeft = 0;
+        [SerializeField]
+        private GameObject manager;
         private void Awake()
         {
             LastWave = 0;
             foreach (var SlimeGroup in WaveSpawner)
             {
-                if(SlimeGroup.Wave > LastWave)
+                CountTotalSlimesLeft += SlimeGroup.TotalSpawned;
+                if (SlimeGroup.Wave > LastWave)
                 {
                     LastWave = SlimeGroup.Wave;
+                    manager.GetComponent<MainCon>().GetTotalEnemies(CountTotalSlimesLeft);
                 }
             }
         }

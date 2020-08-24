@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainCon : MonoBehaviour
 {
@@ -14,8 +15,45 @@ public class MainCon : MonoBehaviour
     private bool OrbitMode = false;
     private bool SpriteisOff = true;
     private GameObject HighlightedObject;
+
+    private float TotalEnemies;
+    [SerializeField]
+    public Text EnemiesLeftDisplay;
+
+    [SerializeField]
+    private int StartingCurrency;
+    private int Currency;
+    public Text CurrencyDisplay;
+
+    public void GetTotalEnemies(float numberofenemies)
+    {
+        TotalEnemies = numberofenemies;
+    }
+
+    public void AddCurrency(int amount)
+    {
+        Currency += amount;
+        TotalEnemies -= 1;
+    }
+
+    public void RemoveCurrency(int amount)
+    {
+        if(Currency >= amount)
+        {
+            Currency -= amount;
+        }
+    }
+
+    public void Awake()
+    {
+        Currency += StartingCurrency;
+    }
+
     void Update()
     {
+        CurrencyDisplay.text = ("Money:") + Currency.ToString("");
+        EnemiesLeftDisplay.text = ("Slimes:") + TotalEnemies.ToString("");
+
         if (Input.GetMouseButtonDown(0))
         {
             if (SelectionActive == false)

@@ -31,4 +31,54 @@ public class GridCon : MonoBehaviour
         ren.color = AlphaChange;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    private KeyCode[] sequence = new KeyCode[]{
+    KeyCode.F,
+    KeyCode.A,  
+    KeyCode.C,
+    KeyCode.E};
+    private int sequenceIndex;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(sequence[sequenceIndex]))
+        {
+            if (++sequenceIndex == sequence.Length)
+            {
+                Renderer mymaterial = GetComponent<Renderer>();
+                Debug.Log("Enter The Face");
+                sequenceIndex = 0;
+            }
+        }
+        else if (Input.anyKeyDown) sequenceIndex = 0;
+    }
+
 }
