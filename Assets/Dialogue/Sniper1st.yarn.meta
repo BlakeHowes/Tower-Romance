@@ -8,11 +8,61 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
-  stringIDs: []
-  compilationStatus: 0
-  isSuccesfullyCompiled: 0
+  baseLanguageID: en-US
+  stringIDs:
+  - Sniper1st-Start-0
+  - Sniper1st-Start-1
+  - Sniper1st-Start-2
+  - Sniper1st-Start-3
+  - Sniper1st-Start-4
+  - Sniper1st-Start-5
+  - Sniper1st-Start-6
+  - Sniper1st-Start-7
+  - Sniper1st-Start-8
+  - Sniper1st-Start-9
+  - Sniper1st-Approach-10
+  - Sniper1st-Approach-11
+  - Sniper1st-Stay-12
+  - Sniper1st-Stay-13
+  - Sniper1st-Stay-14
+  - Sniper1st-Stay-15
+  - Sniper1st-Stay-16
+  - Sniper1st-Stay-17
+  - Sniper1st-Stay-18
+  - Sniper1st-Stay-19
+  - Sniper1st-Stay-20
+  - Sniper1st-Speak-21
+  - Sniper1st-Speak-22
+  - Sniper1st-Speak-23
+  - Sniper1st-Speak-24
+  - Sniper1st-Speak-25
+  - Sniper1st-No-26
+  - Sniper1st-No-27
+  - Sniper1st-No-28
+  - Sniper1st-Yes-29
+  - Sniper1st-Yes-30
+  - Sniper1st-Yes-31
+  - Sniper1st-Yes-32
+  - Sniper1st-Yes-33
+  - Sniper1st-Yes-34
+  - Sniper1st-Yes-35
+  - Sniper1st-Yes-36
+  - Sniper1st-Yes-37
+  - Sniper1st-Goodbye-38
+  - Sniper1st-Goodbye-39
+  - Sniper1st-Goodbye-40
+  - Sniper1st-Goodbye-41
+  - Sniper1st-Goodbye-42
+  - Sniper1st-Goodbye-43
+  - Sniper1st-Goodbye-44
+  - Sniper1st-Goodbye-45
+  - Sniper1st-Goodbye-46
+  - Sniper1st-Goodbye-47
+  - Sniper1st-Goodbye-48
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
   compilationErrorMessage: "Error on line 74 at position 19:token recognition error
     at: '/'\r\n"
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: 66e17fe848eaa70419b9a5e9b358b3ff,
+    type: 3}
   localizations: []

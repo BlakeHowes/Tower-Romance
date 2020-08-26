@@ -3,9 +3,9 @@ tags:
 colorID: 0
 position: 41,85
 ---
-<set $ARel to 0>
-<set $BRel to 0>
-<set $SRel to 0>
+<<set $ARel to 0>>
+<<set $BRel to 0>>
+<<set $SRel to 0>>
 
 Regal Voice: Hello and welcome to the wondrous world of Faelyn, can I help you with anything?
 

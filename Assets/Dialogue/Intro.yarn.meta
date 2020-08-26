@@ -8,11 +8,33 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
-  stringIDs: []
-  compilationStatus: 0
-  isSuccesfullyCompiled: 0
+  baseLanguageID: en-US
+  stringIDs:
+  - Intro-Start-0
+  - Intro-Start-1
+  - Intro-Start-2
+  - Intro-Start-3
+  - Intro-Start-4
+  - Intro-Start-5
+  - Intro-terrific-6
+  - Intro-terrific-7
+  - Intro-question-8
+  - Intro-question-9
+  - Intro-question-10
+  - Intro-question-11
+  - Intro-question-12
+  - Intro-question-13
+  - Intro-Accept-14
+  - Intro-Accept-15
+  - Intro-Accept-16
+  - Intro-Decline-17
+  - Intro-Decline-18
+  - Intro-Decline-19
+  - Intro-Decline-20
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
   compilationErrorMessage: "Error on line 14 at position 30:token recognition error
     at: '?'\r\n"
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: 23f64a8863adb4248bc0d6b63faf79b3,
+    type: 3}
   localizations: []
