@@ -1,0 +1,54 @@
+fileFormatVersion: 2
+guid: ce2f0d9436fcd234bb42638d3622928f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Arrival-Start-0
+  - Arrival-Start-1
+  - Arrival-Start-2
+  - Arrival-Start-3
+  - Arrival-Start-4
+  - Arrival-Start-5
+  - Arrival-Start-6
+  - Arrival-Start-7
+  - Arrival-Start-8
+  - Arrival-Start-9
+  - Arrival-Start-10
+  - Arrival-Ashe-11
+  - Arrival-Ashe-12
+  - Arrival-Ashe-13
+  - Arrival-Ashe-14
+  - Arrival-Ashe-15
+  - Arrival-Ashe-16
+  - Arrival-Blaze-17
+  - Arrival-Blaze-18
+  - Arrival-Blaze-19
+  - Arrival-Blaze-20
+  - Arrival-Blaze-21
+  - Arrival-Blaze-22
+  - Arrival-Remi-23
+  - Arrival-Remi-24
+  - Arrival-Remi-25
+  - Arrival-Remi-26
+  - Arrival-Remi-27
+  - Arrival-Remi-28
+  - Arrival-Remi-29
+  - Arrival-Uninterested-30
+  - Arrival-Interested-31
+  - Arrival-Interested-32
+  - Arrival-Interested-33
+  - Arrival-Interested-34
+  - Arrival-End-35
+  - Arrival-End-36
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

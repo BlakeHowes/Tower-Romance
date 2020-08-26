@@ -1,0 +1,64 @@
+fileFormatVersion: 2
+guid: 2be46f4472ae07e428e44dae6a27510f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Sniper2nd-Start-0
+  - Sniper2nd-Start-1
+  - Sniper2nd-Start-2
+  - Sniper2nd-Start-3
+  - Sniper2nd-Start-4
+  - Sniper2nd-Start-5
+  - Sniper2nd-Start-6
+  - Sniper2nd-Start-7
+  - Sniper2nd-Start-8
+  - Sniper2nd-Start-9
+  - Sniper2nd-Start-10
+  - Sniper2nd-Start-11
+  - Sniper2nd-Start-12
+  - Sniper2nd-Start-13
+  - Sniper2nd-Start-14
+  - Sniper2nd-Start-15
+  - Sniper2nd-Start-16
+  - Sniper2nd-Start-17
+  - Sniper2nd-Node-18
+  - Sniper2nd-Node-19
+  - Sniper2nd-Node-20
+  - Sniper2nd-Node-21
+  - Sniper2nd-hammer-22
+  - Sniper2nd-hammer-23
+  - Sniper2nd-sniper-24
+  - Sniper2nd-sniper-25
+  - Sniper2nd-sniper-26
+  - Sniper2nd-pistol-27
+  - Sniper2nd-pistol-28
+  - Sniper2nd-pistol-29
+  - Sniper2nd-pistol-30
+  - Sniper2nd-pistol-31
+  - Sniper2nd-Workshop-32
+  - Sniper2nd-Workshop-33
+  - Sniper2nd-Workshop-34
+  - Sniper2nd-Workshop-35
+  - Sniper2nd-Workshop-36
+  - Sniper2nd-Workshop-37
+  - Sniper2nd-Workshop-38
+  - Sniper2nd-Workshop-39
+  - Sniper2nd-Workshop-40
+  - Sniper2nd-Workshop-41
+  - Sniper2nd-Workshop-42
+  - Sniper2nd-Workshop-43
+  - Sniper2nd-Workshop-44
+  - Sniper2nd-Workshop-45
+  - Sniper2nd-Workshop-46
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

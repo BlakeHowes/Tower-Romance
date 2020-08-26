@@ -1,0 +1,44 @@
+title: Start
+tags: 
+colorID: 0
+position: -470,-1108
+---
+It's a special night.
+It seems like this city is beyond its darkest hour.
+Now comes the dawn.
+This is the night to celebrate.
+Ashe is preparing food for all of the garrison,
+Blaze is setting up a tremendous fireworks display,
+and Remi, looking down from the tower, organizes the placement of tents.
+
+[[ answer: Spend the night with Ashe |Ashe]]
+[[ answer: Spend the night with Blaze |Blaze]]
+[[ answer: Spend the night with Remi |Remi]]
+===
+title: Ashe
+tags: 
+colorID: 0
+position: -248,-1322
+---
+<if $ARel = 2>
+A trail of scents seems to lead to the kitchen of Ashe's tower.
+===
+title: Blaze
+tags: 
+colorID: 0
+position: -248,-1108
+---
+<if $BRel = 2>
+In a small taped off area near the centre of the raising festival you can see city mages and technicians carrying armfuls of explosives.
+Blaze is at the back of this convoy, shouting to be careful before spotting you.
+===
+title: Remi
+tags: 
+colorID: 0
+position: -247,-895
+---
+<if SRel = 2>
+The door to the overlooking tower is kept open with a stone.
+You take this as an invitation and task yourself with overcoming the many stairs
+The task is of course rewarded with an incredible view.
+===

@@ -1,0 +1,88 @@
+title: Start
+tags: 
+colorID: 0
+position: -169,-492
+---
+After some distance of walking and proceeding through checkpoints you reach the outermost division of the kingdom.
+Standing above the vast landscape are a variety of buildings each of a differing architectural style.
+You are gazing at a stoneworker's paradise of structures ready to defend the kingdom.
+Among them, three in particular catch your eye.
+The towns public address system alarms you as sparks fly from the wiring leading to each speaker.
+
+Regal Voice: *Ahem*, is it on?
+<<wait 2>>
+Regal Voice: If you are hearing this then you must have reached the farthest garrison.
+Regal Voice: Would you Like to hear about some of our most impressive recruits?
+
+[[ answer: I'm familiar with them |Uninterested]]
+[[ answer: Absolutely. |Interested]] ]]
+===
+title: Ashe
+tags: 
+colorID: 0
+position: 266,-492
+---
+Regal Voice: Ashe, a promising knight and archer who has very quickly risen through the ranks for such a young age. 
+Regal Voice: Their reliability and constant attention has been a great asset to us.
+
+Regal Voice: Anyone else I should tell you about?
+[[ answer: Let's go!|End]]
+[[ answer: Blaze |Blaze]]
+[[ answer: Remi |Remi]]
+===
+title: Blaze
+tags: 
+colorID: 0
+position: 266,-228
+---
+Regal Voice: Blaze, a feisty and adventurous inventor who has made use of both pyromancy and dwarven engineering to provide our kingdom with the finest ballistics. 
+Regal Voice: If you need something to be the opposite of in one piece you can talk to them.
+
+Regal Voice: Anyone else I should tell you about?
+[[ answer: Let's go!|End]]
+[[ answer: Ashe |Ashe]]
+[[ answer: Remi |Remi]]
+===
+title: Remi
+tags: 
+colorID: 0
+position: 268,34
+---
+Regal Voice: Remi, one of our finest sharpshooters and gunsmiths who came here from an overrun keep.
+Regal Voice: I can't imagine the size of a force that could overwhelm their defenses
+Regal Voice: Remi has collected even more monster trophys than our local slimeball team.
+
+Regal Voice: Anyone else I should tell you about?
+[[ answer: Let's go!|End]]
+[[ answer: Ashe |Ashe]]
+[[ answer: Blaze |Blaze]]
+===
+title: Uninterested
+tags: 
+colorID: 0
+position: 265,-740
+---
+Regal Voice: Very well then, I'm sure you're excited to get started.
+
+[[End]]
+===
+title: Interested
+tags: 
+colorID: 0
+position: 48,-492
+---
+Regal Voice: Stationed here are some of our finest officers, not limited to but including...
+
+[[ answer: Ashe |Ashe]]
+[[ answer: Blaze |Blaze]]
+[[ answer: Remi |Remi]]
+===
+title: End
+tags: 
+colorID: 0
+position: 545,-492
+---
+Regal Voice: I might have also mentioned you will be overseeing all construction and city planning for this district.
+Regal Voice: Make sure to keep those monstrous hordes away from my palace now!
+<<stop>>
+===

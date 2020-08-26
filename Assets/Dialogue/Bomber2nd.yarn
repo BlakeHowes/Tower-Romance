@@ -1,0 +1,134 @@
+title: Start
+tags: 
+colorID: 0
+position: -510,-737
+---
+After changing into some workshop-appropriate clothes you make your way down to the explosives tower.
+The tavern continues to emanate sounds of enjoyment as you pass it.
+Beyond that though the tower is producing its own rhythmic sound of clanging and buzzing.
+There doesn't seem to be any visible door but you knock at the walls and the industrial sounds stop all at once.
+Blaze: Just a minute!
+A large piece of the wall recedes with a soothingly consistent sound of shifting stone.
+It splits down the centerline where a clearly excited person stands.
+Blaze: You came!
+Blaze holds up a hand in a way that could ambiguously be the beginning of multiple greetings, you have to act quickly!
+
+-> High-five?
+    As you come closer the hand curls into a fist, and you meet it with a tenacious open hand, perhaps this interaction will pass as an invitation to spar? 
+    You certainly hope so...
+
+-> Hand-shake?
+    As you come closer the hand curls into a fist and in a frantic panic you wrap your hand over and firmly shake. 
+    Yes this is happening.
+    <<Wait 3>> 
+
+-> Fist Bump?
+    This is not your first social evaluation rodeo and you have evaluated both your standing and the personality of the person you're interacting with perfectly.
+    As Blaze's hand curls into a fist you meet it with your own and imagine an equally impressive explosion with sound effects included.
+
+Blaze: Aw yeah! that should be part of our secret handshake, I've been creating some blueprints for one.
+
+[[Work]]
+===
+title: Work
+tags: 
+colorID: 0
+position: -512,-517
+---
+Blaze: Now as for the fireworks I was telling you about, take a look at the manifest for what ingredients we have.
+Blaze: There should be plenty of stuff we can use for some boom, what should we pour into the payload?
+You look over the pile of barrels but many of them are written in languages you can't read, the ones you can make out are:
+
+-> Lucernias Dimeralium
+    You uncork the barrel and are immediately hit by the powerful odour of legumes and pepper. 
+    You begin to sneeze uncontrollably but thankfully Blaze is now operating a sort of forklift golem and pours the strange chemical into the main mixing pot.
+
+-> Bracchiatare Pyrate
+    You unseal the lid of the barrel and are greeted by a waft of high raising flames.
+    Blaze: My favourite!
+    Despite your instinctual response to avoid it, you realize the chemical doesn't emit any heat.
+    Blaze: That stuff works great in a hair gel if you're trying to impress somebody.
+
+-> Olm Tears
+    You were going to open the barrel but when you begin to crack the head, you feel incredibly drowsy
+    You lay down next to it, you suppose it can wait.
+    An undetermined amount of time later you are awoken.
+    Blaze: I put that in for you, I hope you had a good rest.
+
+Blaze: This is great, if we can keep this up then everything could probably be ready by tomorrow.
+Blaze: I'll keep working through the witching hour but feel free to head home if you're tired. 
+Blaze: There are beds here too for assistants but they don't normally get used.
+
+[[ I'll keep helping |Help]]
+[[ Get some rest |Rest]]
+===
+title: Help
+tags: 
+colorID: 0
+position: -243,-297
+---
+You both work into the long hours of the night but at some point between mixing salts and Decanting various substances you lose consciousness at a mixing station.
+<<Wait 3>>
+
+[[Wake]]
+===
+title: Rest
+tags: 
+colorID: 0
+position: -243,-518
+---
+Blaze: Thank you so much for your help.
+Blaze: I want everyone to be able to celebrate properly after a long day of fighting.
+
+[[ answer: Head Home |Home]]
+
+[[ answer: Find the nearest bed |Sleep]]
+===
+title: Wake
+tags: 
+colorID: 0
+position: 26,-299
+---
+When you awake you find yourself cozily tucked in beneath a mound of heavy blankets.
+The bed doesn't seem to be properly made but it was very comfortable nonetheless.
+
+You find Blaze cross legged on a fuzzy carpet, snoring in the room next door.
+By the gods, you're late.
+You quickly wake Blaze and you both run out the door. 
+A convenient little machine ejects some buttered toast for you to run to the fort with.
+<set $BRel to 2>
+===
+title: Home
+tags: 
+colorID: 0
+position: 27,-741
+---
+Blaze gives you a torch to stay warm and light your way home
+
+-> Fist Bump Mk.2
+    You are fully prepared this time. 
+    The bonding experience has been leading to this crucial moment.
+    Over a course of thirty seconds you hit every beat with a salvo of contacts.
+
+-> Hug
+    This is probably the most Auspiciously warm hug you've experienced. 
+    You're glad that you've been able to make new friends after such a strange few days.
+
+Blaze: I'll see you tomorrow.
+Blaze: It's gonna be a good one!
+
+You arrive home and kick off your boots, vaulting onto your bed.
+You can't help but feel like your life is going to be more exciting from now on.
+
+<set $BRel to 2>
+===
+title: Sleep
+tags: 
+colorID: 0
+position: 27,-520
+---
+You manage to drag yourself to the nearest bed which atleast has some sheets hastily tucked over its corners.
+You assume Blaze was probably responsible for taking care of the bedding.
+
+[[Wake]]
+===

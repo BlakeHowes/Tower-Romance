@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 66e17fe848eaa70419b9a5e9b358b3ff
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs: []
+  compilationStatus: 0
+  isSuccesfullyCompiled: 0
+  compilationErrorMessage: "Error on line 74 at position 19:token recognition error
+    at: '/'\r\n"
+  baseLanguage: {instanceID: 0}
+  localizations: []

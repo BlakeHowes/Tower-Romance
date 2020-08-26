@@ -1,0 +1,144 @@
+title: Start
+tags: 
+colorID: 0
+position: -451,-622
+---
+With some warning this time you have the opportunity to prepare in some way before heading over to the archery tower at sunset.
+Would some elegant formal wear or a hand crafted piece of armour be impressive.
+
+[[ answer: Find your finest clothes|Suit]]
+[[ answer: Work on your armour |Armour]]
+===
+title: Suit
+tags: 
+colorID: 0
+position: -451,-406
+---
+You scour through the wardrobe that was provided to you by the royalty upon your appointment. 
+Looking through the bookcase you even uncover a secret closet.
+Now, what to wear?
+
+-> Ruffles, lots of ruffles.
+	cuffs, collar, scarf and placket every hem and stitch is helplessly grounded in a very specific period of fashion.
+    <<set $flair to "ruffles">>
+
+-> An illicitly over-embellished dress.
+	With some help from the building's magically conjured staff you weren't aware of, you fit into a ballgown that atleast triples your spatial volume
+    <<set $flair to "dress">>
+
+-> A tuxedo that's finer than god and twice as shiny.
+	the waistcoat is bulletproof, the aftermath is secondary.
+	Some warpaint and a mask might also complement the look.
+    <<set $flair to "suit">> 
+
+[[Arrival]]
+===
+title: Armour
+tags: 
+colorID: 0
+position: -236,-622
+---
+You have a fairly well fashioned collection of armour pieces mostly stemming from a well reinforced pauldron.
+Around your workshop you collect some pieces close to being finished and decide which to work on
+
+-> A gem-encrusted gauntlet.
+	You feel power welling within you and a song about to break out, just don't snap to the beat. 
+	No seriously, don't.
+    <<set $flair to "gauntlet">> 
+
+-> A helmet that is unnaturally hot at the tips
+	you hear a whispering that doesn't seem to come from any particular direction.
+	'Be sure to bring me more souls, ashen one.'
+    <<set $flair to "helmet">> 
+
+-> A mysteriously compelling ring.
+	One ring to impress them all and in the darkness be kind to them.
+	You're quite glad that you beat that creature in a game of riddles.
+    <<set $flair to "ring">>
+
+[[Arrival]]
+===
+title: Arrival
+tags: 
+colorID: 0
+position: -194,-371
+---
+Some moments later you are once again at the doorstep of the tower.
+You certainly had no specific aspirations of becoming a knight. 
+(if any of this is official that is.)
+Having an official title could certainly be useful at fancy events.
+
+You knock on the door and this time an interesting piston contraption pulls it open.
+Sir Puppers is there and starts to gracefully trot up the stairs, beckoning you to follow. 
+The passage is dim and magelight candles guide your way up to the main chambers and dining hall.
+
+This time at the end of the table sits a hooded figure, but you can likely guess which of the members it is.
+
+Hooded Figure: Welcome to the first annual accolade of our circle of knights.
+Hooded Figure: We have a really nice table so maybe we'll name it after that.
+
+Ashe takes off the hood, the robe seems to complement her look.
+I love your [select {$flair} ruffles="ruffles" dress="dress" suit="suit" gauntlet="gauntlet" helmet="helmet" ring="ring"] by the way.
+
+Ashe: We can begin with the ceremony if you like.
+Ashe: I'm sure you know it by heart from last night right?
+Ashe: Let's get this in one take.
+
+[[ Recite ]]
+===
+title: Recite
+tags: 
+colorID: 0
+position: -3,-622
+---
+You are guided to a small pedestal and instructed to kneel and close your eyes.
+
+The oath is laid out on a very large hand-written scroll on the wall behind Ashe. You can probably sneak a few quick looks.
+
+[[ answer: Do your best |improv]]
+[[ answer: Sneak a look |peak]]
+===
+title: improv
+tags: 
+colorID: 0
+position: 234,-504
+---
+I solemnly pledge,
+To cook and eat delicious food,
+To hang out with my best friends,
+and do cool knight stuff.
+<<wait 3>>
+
+Ashe: Good enough!
+Ashe: I suppose we did have plenty to drink last night.
+
+[[Welcome]]
+===
+title: peak
+tags: 
+colorID: 0
+position: 20,-372
+---
+I pledge allegiance to knights of this table yet to be named,
+and do solemnly swear,
+to uphold its values in the form of enjoying banquets,
+reveling with the company of fellow knights
+and performing knightly activities.
+
+[[Welcome]]
+===
+title: Welcome
+tags: 
+colorID: 0
+position: 233,-279
+---
+Ashe snaps and Sir Puppers comes forth with a small rapier, tapping you on each shoulder with the flat of the blade.
+
+Ashe: You're now a knight,
+Ashe: I think
+
+Ashe: Arise, Mason of the Hammers.
+Ashe giggles. 
+Ashe: That means you should stand up.
+<Set $ARel to 2>
+===

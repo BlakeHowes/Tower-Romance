@@ -1,0 +1,99 @@
+title: Start
+tags: 
+colorID: 0
+position: -419,-982
+---
+This time with some knowledge of what constitutes a shooting range you can make your way down to the firing line at the base of the tower.
+Every few seconds you witness the unfortunate death of a training dummy, light wood splinters chipping away.
+Remi is already there. One eye trained on a sight down the range.
+There is a well stocked armoury behind.
+
+Remi: Help yourself to anything you like, I take good care of them.
+
+-> A vibrating shotgun with some rope.
+    as you pick it up you can feel it rumbling like a magical engine.
+    The rope turns out to be a rip cord and once you pull it, the device really comes to life.
+    Remi: King Blue, a motorized shotgun that violently propels its user forward when firing.
+
+-> A Long cylinder surrounded by fruit.
+    with some effort you heave up the thing, shaking aside apples and mangoes as you do.
+    Remi: The fruit basket, my freshest creation.
+    Remi: A launcher that makes use of all the fruit trees that we don't have time to properly harvest.
+
+-> That one looks like a normal rifle.
+    Nothing out of the ordinary here, from what you know about rifles it has all the staples.
+    Clicky thing, Bullet place and scary barrel are all here.
+    Remi clears their throat quite loudly.
+    Remi: Ol' Reliabl', the most reliabl' rifl' ever buil'
+===
+title: Node
+tags: 
+colorID: 0
+position: -419,-762
+---
+If you want, we can make you your very own ranged weapon.
+
+[[ answer: Can it be a hammer? |hammer]]
+
+[[ answer: I like your sniper. |sniper]]
+
+[[ answer: something versatile |pistol]]
+===
+title: hammer
+tags: 
+colorID: 0
+position: -183,-981
+---
+Remi: We might aswell upgrade the one you have, maybe some propulsion and a homing mechanism for returning.
+Remi quickly draws up a diagram of a hammer with rocket boosters on the back of it.
+
+[[Workshop]]
+===
+title: sniper
+tags: 
+colorID: 0
+position: -183,-761
+---
+Remi: I've made lots before so you're sure to get one of good quality.
+Remi:It'll be a good opportunity for me to make a lightweight design.
+Remi: We'll just have to spend some time teaching you how to use one.
+
+[[Workshop]]
+===
+title: pistol
+tags: 
+colorID: 0
+position: -184,-542
+---
+Remi: Something you can take with you that's convenient and light.
+Remi: Maybe a pistol with a multi-tool handle!
+Remi: Like a Serwessian Military Blade.
+Remi Begins digging an old crate full of miscellaneous tools
+Remi: Now lets see you'll need some screwdrivers, a knife with a serrated bit...
+
+[[Workshop]]
+===
+title: Workshop
+tags: 
+colorID: 0
+position: 54,-761
+---
+Remi: Follow me, we can keep practicing later.
+Remi lifts open some nearby cellar doors, and takes the stairs leading down.
+Following and continuing into the basement you can see plenty of presses and cutting Stations.
+Remi pulls down a heavy looking lever and roof mounted lights activate in sequence.
+Automated machines slowly sort and pour different chunks of metal and casings.
+Remi: ask me before you touch anything.
+
+-> Touch things.
+Some of these appealing red buttons really are tempting, but Remi will see you.
+
+-> Don't touch things.
+You resist the urge to touch any dangerous industrial machinery long enough to make it to the end of a hallway.
+
+You come to a glass cabinet, encased within is a shining golden rifle.
+Remi: This is Heaven's Warning.
+Remi: it fires a single shot that conjures a small lightning storm. 
+Remi: Frequently striking the point of the bullet's detonation over a matter of seconds.
+Remi: It's my most prized possession, I needed help from the city mages of course.
+===

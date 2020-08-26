@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: 54e47380e9064a14c96c0847d9c8c515
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - End-Start-0
+  - End-Start-1
+  - End-Start-2
+  - End-Start-3
+  - End-Start-4
+  - End-Start-5
+  - End-Start-6
+  - End-Start-7
+  - End-Start-8
+  - End-Start-9
+  - End-Ashe-10
+  - End-Ashe-11
+  - End-Blaze-12
+  - End-Blaze-13
+  - End-Blaze-14
+  - End-Remi-15
+  - End-Remi-16
+  - End-Remi-17
+  - End-Remi-18
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

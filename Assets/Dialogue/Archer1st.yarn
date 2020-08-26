@@ -1,0 +1,121 @@
+title: Start
+tags: 
+colorID: 0
+position: -503,-915
+---
+The day has finally come to an end.
+You continue to saunter down the stone paved streets.
+You let out a relaxed yawn and admire the charm of this place,
+The abandoned bookshops, the sounds of celebration far away.
+And, the whistling of an arrow?
+Driving through stone and embedding itself at your feet is a fine arrow.
+Wrapped around the spine and tied with a neat ribbon is a scroll of sorts.
+You untie the bow and unravel the scroll to find a handwritten letter.
+
+In this, the year of our lord REDACTED, in the season of Moon's Height.
+I am writing to invite you cordially to a meeting of the knights.
+There are currently two officially appointed knights in our organization
+myself and Sergeant Wilhelm Puppers (My pet Samoyed), who has proven very helpful.
+Do not accept his offers to spar no matter how much he may insist.
+If you wish to attend, meet us cordially at twilight.
+Sincerely, Asheton Geraint, of the Ordo Equistris.
+
+[[ answer: Prepare for the event |Attend]]
+[[ answer: Send a message back |Reply]]
+===
+title: Attend
+tags: 
+colorID: 0
+position: -504,-698
+---
+Once you arrive, on the cusp of sunset you knock on the large wooden door of the tower.
+It seems to smell of - mahogany.
+A steel slide in the middle of the door opens up to reveal somewhat familiar eyes.
+The following series of clangs, knocks and sounds of twisting metal seem to imply tight security.
+with the same dexterity used to disarm the door, Ashe flings the door open.
+
+Ashe: Welcome, please come in. There's a space for your boots right by the door.
+You neatly tuck away your shoes and follow your host up the spiraling stairs.
+Ashe: You are free to think about it throughout the evening but would you be interested in joining our order?
+
+[[ answer: What is Involved? |What]]
+[[ answer: Do I have to be a knight? |Knight]]
+===
+title: Reply
+tags: 
+colorID: 0
+position: -749,-698
+---
+There is a coop of messenger pigeons nearby. 
+You might know that pigeons return home and simply hope that one of them lives with Ashe.
+After some frantic scribbling at the pigeon-gram post with the supplies left around you create your letter. 
+
+-> Thank you.
+	The letter reads...
+	Thank you muchly for the invitation and cordial things.
+	I will Indubitably see you soon upon the setting of suns.
+	(Was that formal enough? It will have to do.)
+	Sincerely, Mason of the bricks and such.
+
+-> Should I bring anything?
+	In just a few quick moments another arrow finishes its flight at your feet.
+	This time the body of the letter reads:
+	"Just yourself and a healthy appetite for knightly foods."
+	Another arrow lands very shortly after narrowly missing your pigeon friends.
+	"Please take off your shoes at the door"
+
+[[Attend]]
+===
+title: What
+tags: 
+colorID: 0
+position: -284,-699
+---
+Ashe: I can run you through the code of our order if you're interested.
+Ashe: All you have to do is stick to it and recite the oath to become a member.
+Ashe now speaks in a hushed whisper
+Ashe: And hang out with the other knights.
+
+[[Dinner]]
+===
+title: Knight
+tags: 
+colorID: 0
+position: -284,-915
+---
+Ashe: I want to create a thriving order of knights that is both inviting and courteous!
+Ashe: As a result of my service the royalty have empowered me to appoint squires and knights as needed.
+Ashe: You just need to recite the oath and swear to uphold the values of our order!
+Ashe: Don't worry, its not scary or anything.
+
+[[Dinner]]
+===
+title: Dinner
+tags: 
+colorID: 0
+position: -63,-914
+---
+You arrive at a dining hall set with an abundance of cutlery. 
+At the head of the table sits an enthusiastic looking dog dressed in custom made armaments.
+
+Ashe: Mason, this is Sir Puppers, my current second in command.
+Ashe: you'll have to be careful. He's going to consider you competition.
+
+-> Greetings Sir Knight.
+	Your new canine friend barks and bows his front legs.
+-> Let's dig in!
+	Ashe hands you a napkin and slips away into the kitchen.
+-> Take your seat
+	You take your seat and mirror the actions of Sir Puppers and he takes a napkin and manages to tuck it into his collar.
+
+Ashe comes out from the kitchen wheeling a cart with a veritable variety of delicious foods.
+Time slips away as you are served several courses of exciting gourmet pieces, enjoying the company of your new friends.
+
+as the evening seems to come to a close Ashe invites you to take a coat for warmth.
+Ashe: You can keep it or bring it back tomorrow if you like.
+Ashe: For your initiation, if you wanted to join that is.
+Ashe: hopefully the dinner convinced you.
+
+Ashe smiles and waves you goodbye.
+<set $ARel to 1>
+===

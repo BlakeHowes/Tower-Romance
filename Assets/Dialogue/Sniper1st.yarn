@@ -1,0 +1,104 @@
+title: Start
+tags: 
+colorID: 0
+position: -384,-489
+---
+Pacing home you notice that the air has become colder.
+you feel an ominous gaze looming over you and from the corner of your vision you see a harsh glint reflecting the evening sun.
+The groan and feedback of a loud speaker becomes apparent as it crackles to life.
+Stranger: C-civilian?
+-> Uh, yes?
+The sound is coming from the marksman tower
+
+[[ answer: Approach the Marksman Tower|Approach]] ]]
+[[ answer: Stay where you are|Stay]] ]]
+===
+title: Approach
+tags: 
+colorID: 0
+position: -155,-488
+---
+You've heard the voice once before when you arrived at the garrison.
+It's Remi, the sniper.
+
+[[Speak]]
+===
+title: Stay
+tags: 
+colorID: 0
+position: -385,-259
+---
+You've heard the voice once before when you arrived at the garrison.
+Hearing it once again you recognize it.
+Its Remi, the Sniper
+
+Remi: *Ahem* The builder standing near the practice range.
+Remi: Could you perhaps move to a safe area.
+
+-> Sorry about that
+	Remi: That's okay, I didn't want to annoy staff about boundary markings.
+-> I'll move right away
+	Remi: Its good that no one was hurt
+
+[[Speak]]
+===
+title: Speak
+tags: 
+colorID: 0
+position: -161,-263
+---
+Remi: Practice is from 5:00pm till 6:00pm each evening on weekdays.
+Remi: In case that information is useful to you...
+Remi: Do you know how to use a ranged weapon?
+
+
+[[ answer: I have some experience. |Yes]]
+[[ answer: You can throw hammers, right?|No]]
+===
+title: No
+tags: 
+colorID: 0
+position: 77,-261
+---
+Remi: It's probably best to keep something like that in your hands.
+Remi: Unless you're some kind of angry, lightning-y god or something.
+
+[[ answer: Indeed |Goodbye]]
+===
+title: Yes
+tags: 
+colorID: 0
+position: 69,-491
+---
+Remi: OOOoOoh, what kind?
+Remi: You must tell me everything.
+
+-> Slingshots
+	Remi: I respect all ranged weapons, but that's a little primitive right?
+-> Bows
+	Remi: There's craftsmanship to bows but not enough speed.
+-> Staffs
+	Remi: I tried to learn to use one but I find magic unreliable.
+
+[[ answer: I guess I'll take care of them up close. |Goodbye]]
+===
+title: Goodbye
+tags: 
+colorID: 0
+position: 289,-491
+---
+-> I better get going before it gets dark.
+	Remi: Thank you for your help today.
+	Remi: I look forward to continuing to work with you.
+
+-> ...
+	Remi: ...
+	Remi: I can show you how to use a rifle some time if you like?
+
+Remi: Feel free to return tomorrow if you want to train with me.
+
+You return to your accommodation as the sun covers the sky in golden light.
+One particular thought sticks in your mind.
+That lonely tower, wrapped in the shadows of the inner wall.
+<set $SRel to 1>
+===

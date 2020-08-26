@@ -1,0 +1,109 @@
+title: Start
+tags: 
+colorID: 0
+position: 64,-252
+---
+After the daily watch you decide to scout the town to find a tavern for some relaxation.
+In a cramped corner of town you can hear some light chanting and upon moving closer the banging of tables also becomes more apparent.
+you open the heavy door and are greeted by the true volume of the uproar.
+"Close the Door" the patrons shout, almost in unison.
+Soldiers from all parts of the garrison are engaged in drinking and merrymaking.
+As you ease yourself into the space, you are disturbed by an even louder sound.
+
+BLAZE: HELLO THERE!
+It seems you didn't notice them on your way in.
+Looking outside you realize that the explosives tower is on the same street.
+
+You have to raise your voice significantly but manage a reply.
+
+[[ answer: How are you? |Talk]]
+[[ answer: Do you come here often?|Talk]]
+===
+title: Talk
+tags: 
+colorID: 0
+position: 67,-10
+---
+Blaze: Terrific! Nothing lights my fire like some good song and dance. 
+Blaze: I'm working on some fireworks for a special night too.
+
+[[ answer: What kind of fireworks? |Fireworks]]
+[[ answer: What sort of special night?|Night]]
+===
+title: Fireworks
+tags: 
+colorID: 0
+position: 302,-10
+---
+Blaze: Squibs, crackers, bAckaRappeRs, Spaaarklers, THUNDERCLAPS.
+You try to get a word in but Blaze continues, unphased.
+Blaze: Fire-fountains, Whip-dragons, Eternal Smokescreeeens.
+
+[[Favourite]]
+===
+title: Night
+tags: 
+colorID: 0
+position: 299,-253
+---
+Blaze: I didn't give that much thought.
+Blaze: But one is sure to come along.
+Blaze: What's more important is the fireworks.
+Blaze: Some that go boom, some that sparkle, some that light the sky on FiRe.
+
+[[Favourite]]
+===
+title: Favourite
+tags: 
+colorID: 0
+position: 531,-253
+---
+Blaze: What's your favourite kind of firework?
+
+-> Anything Colourful
+	Blaze: I'll be sure to include lots of salts then.
+-> Something Loud
+	Blaze: you're so right, more boom equals more fun, its a basic law of science.
+-> Something you can hold
+	Blaze: I hold launchers all day, I don't want to brag but I'm pretty good at it.
+
+[[ answer: Can I help with that? |Help]]
+[[ answer: That sounds great! |Encourage]]
+===
+title: Help
+tags: 
+colorID: 0
+position: 533,33
+---
+Blaze: That would be so very very cool.
+Blaze: More Explosions for everyone!
+
+[[End]]
+===
+title: Encourage
+tags: 
+colorID: 0
+position: 761,32
+---
+Blaze: Thank you!
+Blaze: I was hoping that I could impress everyone.
+
+[[End]]
+===
+title: End
+tags: 
+colorID: 0
+position: 786,-253
+---
+Blaze: But there's still lots to do.
+Blaze: We could need these fireworks any night now!
+
+-> absolutely
+	Blaze: I'm glad you understand the importance of this.
+-> let me help
+	Blaze: That would be so freaking cool
+
+Blaze: Come by any time if you wanna help out.
+Blaze: This is going to be great!
+<set $BRel to 1>
+===

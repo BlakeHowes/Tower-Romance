@@ -1,0 +1,84 @@
+fileFormatVersion: 2
+guid: 8d41fd1e67806564da3ca319c4ba7844
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Bomber2nd-Start-0
+  - Bomber2nd-Start-1
+  - Bomber2nd-Start-2
+  - Bomber2nd-Start-3
+  - Bomber2nd-Start-4
+  - Bomber2nd-Start-5
+  - Bomber2nd-Start-6
+  - Bomber2nd-Start-7
+  - Bomber2nd-Start-8
+  - Bomber2nd-Start-9
+  - Bomber2nd-Start-10
+  - Bomber2nd-Start-11
+  - Bomber2nd-Start-12
+  - Bomber2nd-Start-13
+  - Bomber2nd-Start-14
+  - Bomber2nd-Start-15
+  - Bomber2nd-Start-16
+  - Bomber2nd-Start-17
+  - Bomber2nd-Start-18
+  - Bomber2nd-Work-19
+  - Bomber2nd-Work-20
+  - Bomber2nd-Work-21
+  - Bomber2nd-Work-22
+  - Bomber2nd-Work-23
+  - Bomber2nd-Work-24
+  - Bomber2nd-Work-25
+  - Bomber2nd-Work-26
+  - Bomber2nd-Work-27
+  - Bomber2nd-Work-28
+  - Bomber2nd-Work-29
+  - Bomber2nd-Work-30
+  - Bomber2nd-Work-31
+  - Bomber2nd-Work-32
+  - Bomber2nd-Work-33
+  - Bomber2nd-Work-34
+  - Bomber2nd-Work-35
+  - Bomber2nd-Work-36
+  - Bomber2nd-Work-37
+  - Bomber2nd-Work-38
+  - Bomber2nd-Work-39
+  - Bomber2nd-Help-40
+  - Bomber2nd-Rest-41
+  - Bomber2nd-Rest-42
+  - Bomber2nd-Rest-43
+  - Bomber2nd-Rest-44
+  - Bomber2nd-Wake-45
+  - Bomber2nd-Wake-46
+  - Bomber2nd-Wake-47
+  - Bomber2nd-Wake-48
+  - Bomber2nd-Wake-49
+  - Bomber2nd-Wake-50
+  - Bomber2nd-Wake-51
+  - Bomber2nd-Home-52
+  - Bomber2nd-Home-53
+  - Bomber2nd-Home-54
+  - Bomber2nd-Home-55
+  - Bomber2nd-Home-56
+  - Bomber2nd-Home-57
+  - Bomber2nd-Home-58
+  - Bomber2nd-Home-59
+  - Bomber2nd-Home-60
+  - Bomber2nd-Home-61
+  - Bomber2nd-Home-62
+  - Bomber2nd-Home-63
+  - Bomber2nd-Home-64
+  - Bomber2nd-Sleep-65
+  - Bomber2nd-Sleep-66
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
