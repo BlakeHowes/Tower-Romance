@@ -9,9 +9,9 @@ position: 41,85
 
 Regal Voice: Hello and welcome to the wondrous world of Faelyn, can I help you with anything?
 
-[[answer:No, that all sounds terrific and I am not interested in World-building!|terrific]]
+[[No, that all sounds terrific and I am not interested in World-building!|terrific]]
 
-[[ answer:What? Where? Who? |question]]
+[[What? Where? Who? |question]]
 ===
 title: terrific
 tags: 
@@ -32,8 +32,8 @@ Regal Voice: We are in dire need of people that can aid the city in its hour of 
 	Regal Voice: Mason, was it? You are uniquely qualified to repel the forces of evil...
 	Regal Voice: and keep our armaments in good condition.
 
-[[ answer:Well, I guess theres no helping it. |Accept]]
-[[ answer:Why do I have to do this? |Decline]]
+[[Well, I guess theres no helping it. |Accept]]
+[[Why do I have to do this? |Decline]]
 ===
 title: Accept
 tags: 
@@ -42,7 +42,7 @@ position: 216,329
 ---
 Regal Voice: Well then, if you aren't suffering from some sort of amnesia then there's no time to waste
 
-[[ answer:I'm not entirely sure about that? |terrific]] ]]
+[[I'm not entirely sure about that? |terrific]] ]]
 ===
 title: Decline
 tags: 
@@ -52,5 +52,5 @@ position: 459,328
 Regal Voice: Because you're the protagonist silly. 
 Regal Voice: We need a story to happen.
 
-[[ answer: That seems perfectly reasonable|Accept]] ]]
+[[That seems perfectly reasonable|Accept]]
 ===

@@ -10,8 +10,8 @@ Stranger: C-civilian?
 -> Uh, yes?
 The sound is coming from the marksman tower
 
-[[ answer: Approach the Marksman Tower|Approach]] ]]
-[[ answer: Stay where you are|Stay]] ]]
+[[Approach the Marksman Tower|Approach]] ]]
+[[Stay where you are|Stay]] ]]
 ===
 title: Approach
 tags: 
@@ -52,8 +52,8 @@ Remi: In case that information is useful to you...
 Remi: Do you know how to use a ranged weapon?
 
 
-[[ answer: I have some experience. |Yes]]
-[[ answer: You can throw hammers, right?|No]]
+[[I have some experience. |Yes]]
+[[You can throw hammers, right?|No]]
 ===
 title: No
 tags: 

@@ -20,8 +20,8 @@ Do not accept his offers to spar no matter how much he may insist.
 If you wish to attend, meet us cordially at twilight.
 Sincerely, Asheton Geraint, of the Ordo Equistris.
 
-[[ answer: Prepare for the event |Attend]]
-[[ answer: Send a message back |Reply]]
+[[Prepare for the event |Attend]]
+[[Send a message back |Reply]]
 ===
 title: Attend
 tags: 
@@ -38,8 +38,8 @@ Ashe: Welcome, please come in. There's a space for your boots right by the door.
 You neatly tuck away your shoes and follow your host up the spiraling stairs.
 Ashe: You are free to think about it throughout the evening but would you be interested in joining our order?
 
-[[ answer: What is Involved? |What]]
-[[ answer: Do I have to be a knight? |Knight]]
+[[What is Involved? |What]]
+[[Do I have to be a knight? |Knight]]
 ===
 title: Reply
 tags: 
@@ -117,5 +117,5 @@ Ashe: For your initiation, if you wanted to join that is.
 Ashe: hopefully the dinner convinced you.
 
 Ashe smiles and waves you goodbye.
-<set $ARel to 1>
+<<set $ARel to 1>>
 ===

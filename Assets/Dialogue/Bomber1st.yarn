@@ -16,8 +16,8 @@ Looking outside you realize that the explosives tower is on the same street.
 
 You have to raise your voice significantly but manage a reply.
 
-[[ answer: How are you? |Talk]]
-[[ answer: Do you come here often?|Talk]]
+[[How are you? |Talk]]
+[[Do you come here often?|Talk]]
 ===
 title: Talk
 tags: 
@@ -27,8 +27,8 @@ position: 67,-10
 Blaze: Terrific! Nothing lights my fire like some good song and dance. 
 Blaze: I'm working on some fireworks for a special night too.
 
-[[ answer: What kind of fireworks? |Fireworks]]
-[[ answer: What sort of special night?|Night]]
+[[What kind of fireworks? |Fireworks]]
+[[What sort of special night?|Night]]
 ===
 title: Fireworks
 tags: 
@@ -67,8 +67,8 @@ Blaze: What's your favourite kind of firework?
 -> Something you can hold
 	Blaze: I hold launchers all day, I don't want to brag but I'm pretty good at it.
 
-[[ answer: Can I help with that? |Help]]
-[[ answer: That sounds great! |Encourage]]
+[[Can I help with that? |Help]]
+[[That sounds great! |Encourage]]
 ===
 title: Help
 tags: 
@@ -105,5 +105,5 @@ Blaze: We could need these fireworks any night now!
 
 Blaze: Come by any time if you wanna help out.
 Blaze: This is going to be great!
-<set $BRel to 1>
+<<set $BRel to 1>>
 ===

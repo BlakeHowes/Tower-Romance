@@ -48,7 +48,6 @@ public class YarnImporterEditor : ScriptedImporterEditor {
         base.OnDisable();
     }
 
-
     public override void OnInspectorGUI() {
         serializedObject.Update();
         EditorGUILayout.Space();
