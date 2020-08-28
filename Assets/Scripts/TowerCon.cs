@@ -25,7 +25,8 @@ public class TowerCon : MonoBehaviour
     private LineRenderer Beam;
     [SerializeField]
     private GameObject Projectile;
-
+    [SerializeField]
+    private GameObject GunModel;
     private float ShootTimer;
     private GameObject CurrentTarget;
     private GameObject bullet;
@@ -198,6 +199,14 @@ public class TowerCon : MonoBehaviour
             bullet.transform.parent = null;
             bullet.GetComponent<ProjectileCon>().ShootProjectileStraight(Enemy);
             ShootTimer = 0f;
+
+            if (GunModel != null)
+            {
+                if (FindTarget() != null)
+                {
+                    GunModel.transform.LookAt(FindTarget().transform, Vector3.up);
+                }
+            }
         }
     }
 
