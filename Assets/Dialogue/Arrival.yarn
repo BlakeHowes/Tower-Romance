@@ -15,7 +15,7 @@ Regal Voice: If you are hearing this then you must have reached the farthest gar
 Regal Voice: Would you Like to hear about some of our most impressive recruits?
 
 [[ answer: I'm familiar with them |Uninterested]]
-[[ answer: Absolutely. |Interested]] ]]
+[[ answer: Absolutely. |Interested]]
 ===
 title: Ashe
 tags: 

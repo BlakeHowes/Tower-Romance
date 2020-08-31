@@ -8,7 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
+  baseLanguageID: en-US
   stringIDs:
   - Arrival-Start-0
   - Arrival-Start-1
@@ -20,33 +20,32 @@ ScriptedImporter:
   - Arrival-Start-7
   - Arrival-Start-8
   - Arrival-Start-9
-  - Arrival-Start-10
+  - Arrival-Ashe-10
   - Arrival-Ashe-11
   - Arrival-Ashe-12
   - Arrival-Ashe-13
   - Arrival-Ashe-14
   - Arrival-Ashe-15
-  - Arrival-Ashe-16
+  - Arrival-Blaze-16
   - Arrival-Blaze-17
   - Arrival-Blaze-18
   - Arrival-Blaze-19
   - Arrival-Blaze-20
   - Arrival-Blaze-21
-  - Arrival-Blaze-22
+  - Arrival-Remi-22
   - Arrival-Remi-23
   - Arrival-Remi-24
   - Arrival-Remi-25
   - Arrival-Remi-26
   - Arrival-Remi-27
   - Arrival-Remi-28
-  - Arrival-Remi-29
-  - Arrival-Uninterested-30
+  - Arrival-Uninterested-29
+  - Arrival-Interested-30
   - Arrival-Interested-31
   - Arrival-Interested-32
   - Arrival-Interested-33
-  - Arrival-Interested-34
+  - Arrival-End-34
   - Arrival-End-35
-  - Arrival-End-36
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
