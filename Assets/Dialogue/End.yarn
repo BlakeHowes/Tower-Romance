@@ -21,7 +21,12 @@ colorID: 0
 position: -248,-1322
 ---
 <if $ARel = 2>
-A trail of scents seems to lead to the kitchen of Ashe's tower.
+A trail of scents seems to lead to a nearby kitchen.
+Ashe is hard at work taking command of the situation.
+Sir Puppers is fiercely handling a whisk, wearing a toque.
+You dodge and dash between agile chefs to reach the center of the kitchen.
+Ashe: Thank goodness you are here, the fate of the evening is at stake!
+Ashe: Quickly, take this rolling pin.
 ===
 title: Blaze
 tags: 
@@ -29,8 +34,12 @@ colorID: 0
 position: -248,-1108
 ---
 <if $BRel = 2>
-In a small taped off area near the centre of the raising festival you can see city mages and technicians carrying armfuls of explosives.
+In a small taped off lane near the centre of the raising festival you can see city mages and technicians carrying armfuls of explosives.
 Blaze is at the back of this convoy, shouting to be careful before spotting you.
+The convoy weaves its way between the excited crowd and arrives at a stage.
+A pyramid of gunpowder and rockets is being built.
+You seem to have missed blaze hopping atop a golem and lifting the final pieces into place.
+Blaze: Alright!
 ===
 title: Remi
 tags: 
@@ -41,4 +50,59 @@ position: -247,-895
 The door to the overlooking tower is kept open with a stone.
 You take this as an invitation and task yourself with overcoming the many stairs
 The task is of course rewarded with an incredible view.
+You can even see the vast wilds that lie beyond the city gates.
+Remi is there, perched at a post, preparing something.
+Remi: I'm here to signal the start of the event.
+Remi: When I strike the bell the festival will officially start.
+The weapon in position, its the one you were shown before.
+===
+title: SnapBang
+tags: 
+colorID: 0
+position: -31,-895
+---
+Remi chambers a bullet and slides the bolt back into its place.
+One last precise breath before readying a shot.
+An eye down the sight and everything readied for perfect precision.
+The final sound is a sharpened breath.
+It was too fast to see but its path seems to have torn the air asunder on its journey.
+The wind turns back on itself as the target is decimated, from the point streams of gray twist and deform to great blundering clouds.
+With a snap, whiz and an almighty CRACK, the sky turns black for just a moment for screaming lightning to bring it back to the light.
+Remi: bang...
+===
+title: CheeseforEveryone
+tags: 
+colorID: 0
+position: -32,-1324
+---
+You whip a few dishes into shape and rush at the beck and call of the chefs.
+Time flies as the tables are set, the finest cheap ale has been poured and a condiments table so great it threatens to coat the entire kingdom in sauce is in place.
+You find Ashe again and start searching for the best seats you can.
+Ashe: quickly, things could be starting at any moment.
+Just as you find a spot for your company of knights a deafening sound surprises you.
+Its coming from the belltower, lighting crackles to the bell and the ringing and thunder captivate the town
+Ashe yells before it subsides
+Ashe: Everybody dig in!
+===
+title: RedCarpet
+tags: 
+colorID: 0
+position: -34,-1108
+---
+Blaze signals for you to hop on, there are several grooves that make it easy enough to mount. 
+Blaze: All that's left to do is roll out the red carpet!
+Blaze: That's what I call the fuse.
+You hold onto a makeshift saddle tightly as Blaze excitedly pilots you away, unreeling the fuse.
+The golem climbs a small outlook with erratic movements and you look back over to the pile in the distance.
+Blaze: We just have to wait for the signal.
+===
+title: HappyEverAfter
+tags: 
+colorID: 0
+position: 205,-1107
+---
+The grand finale of the display comes to a head and colours splash across the sky.
+You're surrounded by friends and for a few perfect moments...
+You feel like everything will be okay.
+Together you can overcome anything!
 ===

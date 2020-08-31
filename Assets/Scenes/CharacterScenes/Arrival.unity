@@ -233,10 +233,15 @@ PrefabInstance:
       propertyPath: startAutomatically
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8744308210320890028, guid: 38dbd8dcdabb9034987acf7ba44959bf,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 444783765284218729, guid: 38dbd8dcdabb9034987acf7ba44959bf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 581
+      value: 660
       objectReference: {fileID: 0}
     - target: {fileID: 7932498998133480643, guid: 38dbd8dcdabb9034987acf7ba44959bf,
         type: 3}
@@ -249,11 +254,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5136409129877797336, guid: 38dbd8dcdabb9034987acf7ba44959bf,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8744308210320890028, guid: 38dbd8dcdabb9034987acf7ba44959bf,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -458,6 +458,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 1186990876225971415, guid: c7929072b295ca441a79a84f8ddadac6,
+        type: 3}
+      propertyPath: NextScene
+      value: Level1
+      objectReference: {fileID: 0}
     - target: {fileID: 1186990876225971412, guid: c7929072b295ca441a79a84f8ddadac6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -512,11 +517,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1186990876225971415, guid: c7929072b295ca441a79a84f8ddadac6,
-        type: 3}
-      propertyPath: NextScene
-      value: Level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7929072b295ca441a79a84f8ddadac6, type: 3}
