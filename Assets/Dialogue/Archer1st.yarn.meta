@@ -8,12 +8,80 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
-  stringIDs: []
-  compilationStatus: 0
-  isSuccesfullyCompiled: 0
+  baseLanguageID: en-US
+  stringIDs:
+  - Archer1st-Start-0
+  - Archer1st-Start-1
+  - Archer1st-Start-2
+  - Archer1st-Start-3
+  - Archer1st-Start-4
+  - Archer1st-Start-5
+  - Archer1st-Start-6
+  - Archer1st-Start-7
+  - Archer1st-Start-8
+  - Archer1st-Start-9
+  - Archer1st-Start-10
+  - Archer1st-Start-11
+  - Archer1st-Start-12
+  - Archer1st-Start-13
+  - Archer1st-Start-14
+  - Archer1st-Start-15
+  - Archer1st-Start-16
+  - Archer1st-Attend-17
+  - Archer1st-Attend-18
+  - Archer1st-Attend-19
+  - Archer1st-Attend-20
+  - Archer1st-Attend-21
+  - Archer1st-Attend-22
+  - Archer1st-Attend-23
+  - Archer1st-Attend-24
+  - Archer1st-Attend-25
+  - Archer1st-Attend-26
+  - Archer1st-Reply-27
+  - Archer1st-Reply-28
+  - Archer1st-Reply-29
+  - Archer1st-Reply-30
+  - Archer1st-Reply-31
+  - Archer1st-Reply-32
+  - Archer1st-Reply-33
+  - Archer1st-Reply-34
+  - Archer1st-Reply-35
+  - Archer1st-Reply-36
+  - Archer1st-Reply-37
+  - Archer1st-Reply-38
+  - Archer1st-Reply-39
+  - Archer1st-Reply-40
+  - Archer1st-Reply-41
+  - Archer1st-What-42
+  - Archer1st-What-43
+  - Archer1st-What-44
+  - Archer1st-What-45
+  - Archer1st-Knight-46
+  - Archer1st-Knight-47
+  - Archer1st-Knight-48
+  - Archer1st-Knight-49
+  - Archer1st-Dinner-50
+  - Archer1st-Dinner-51
+  - Archer1st-Dinner-52
+  - Archer1st-Dinner-53
+  - Archer1st-Dinner-54
+  - Archer1st-Dinner-55
+  - Archer1st-Dinner-56
+  - Archer1st-Dinner-57
+  - Archer1st-Dinner-58
+  - Archer1st-Dinner-59
+  - Archer1st-Dinner-60
+  - Archer1st-Dinner-61
+  - Archer1st-Dinner-62
+  - Archer1st-Dinner-63
+  - Archer1st-Dinner-64
+  - Archer1st-Dinner-65
+  - Archer1st-Dinner-66
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
   compilationErrorMessage: "Error on line 15 at position 33:\nmismatched input ']'
     expecting FORMAT_FUNCTION_EXPRESSION_START\r\nIn this, the year of our lord [i]*Redacted*[/i],
     in the season of Moon's Height.\r\n                                ^"
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: cda39c7d1ef9ec6498ccf148c87fd576,
+    type: 3}
   localizations: []

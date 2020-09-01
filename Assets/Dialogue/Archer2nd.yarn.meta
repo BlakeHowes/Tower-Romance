@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f56b94762eca030408922df6f36bda9e
+guid: df064344fc7a22e429690a129ceedae4
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -8,11 +8,73 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
-  stringIDs: []
-  compilationStatus: 0
-  isSuccesfullyCompiled: 0
-  compilationErrorMessage: "Error on line 23 at position 28:\nmismatched input '>>'
-    expecting '('\r\n    <<set $flair to ruffles>>\r\n                           ^^"
-  baseLanguage: {instanceID: 0}
+  baseLanguageID: en-US
+  stringIDs:
+  - Archer2nd-Start-0
+  - Archer2nd-Start-1
+  - Archer2nd-Start-2
+  - Archer2nd-Start-3
+  - Archer2nd-Suit-4
+  - Archer2nd-Suit-5
+  - Archer2nd-Suit-6
+  - Archer2nd-Suit-7
+  - Archer2nd-Suit-8
+  - Archer2nd-Suit-9
+  - Archer2nd-Armour-10
+  - Archer2nd-Armour-11
+  - Archer2nd-Armour-12
+  - Archer2nd-Armour-13
+  - Archer2nd-Armour-14
+  - Archer2nd-Arrival-15
+  - Archer2nd-Arrival-16
+  - Archer2nd-Arrival-17
+  - Archer2nd-Arrival-18
+  - Archer2nd-Arrival-19
+  - Archer2nd-Arrival-20
+  - Archer2nd-Arrival-21
+  - Archer2nd-Arrival-22
+  - Archer2nd-Arrival-23
+  - Archer2nd-Arrival-24
+  - Archer2nd-Arrival-25
+  - Archer2nd-Arrival-26
+  - Archer2nd-Arrival-27
+  - Archer2nd-Arrival-28
+  - Archer2nd-Arrival-29
+  - Archer2nd-Recite-30
+  - Archer2nd-Recite-31
+  - Archer2nd-Recite-32
+  - Archer2nd-Recite-33
+  - Archer2nd-improv-34
+  - Archer2nd-improv-35
+  - Archer2nd-improv-36
+  - Archer2nd-improv-37
+  - Archer2nd-improv-38
+  - Archer2nd-improv-39
+  - Archer2nd-peak-40
+  - Archer2nd-peak-41
+  - Archer2nd-peak-42
+  - Archer2nd-peak-43
+  - Archer2nd-peak-44
+  - Archer2nd-Welcome-45
+  - Archer2nd-Welcome-46
+  - Archer2nd-Welcome-47
+  - Archer2nd-Welcome-48
+  - Archer2nd-Welcome-49
+  - Archer2nd-Welcome-50
+  - Archer2nd-Welcome-51
+  - Archer2nd-Ruffles-52
+  - Archer2nd-Dress-53
+  - Archer2nd-Tuxedo-54
+  - Archer2nd-Tuxedo-55
+  - Archer2nd-Gauntlet-56
+  - Archer2nd-Gauntlet-57
+  - Archer2nd-Helmet-58
+  - Archer2nd-Helmet-59
+  - Archer2nd-Ring-60
+  - Archer2nd-Ring-61
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: df064344fc7a22e429690a129ceedae4,
+    type: 3}
   localizations: []

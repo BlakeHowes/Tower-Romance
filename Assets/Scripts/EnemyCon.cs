@@ -8,12 +8,26 @@ public class EnemyCon : MonoBehaviour
     private NavMeshAgent agent;
     [SerializeField]
     private GameObject target;
+    public GameObject Manager;
+    [SerializeField]
+    private int damage;
 
     void OnEnable()
     {
+        Manager = GameObject.FindGameObjectWithTag("Manager");
         target = GameObject.FindGameObjectWithTag("Target"); //Change this out for multiple Targets
         agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(target.transform.position);
+    }
+ 
+    //if touching end target, destroy unit and remove crystal health.
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "Target")
+        {
+            Manager.GetComponent<MainCon>().RemoveHealth(damage);
+            Destroy(gameObject);
+        }
     }
 
     //Returns distance left to target

@@ -322,6 +322,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 1186990876225971415, guid: c7929072b295ca441a79a84f8ddadac6,
+        type: 3}
+      propertyPath: NextScene
+      value: Level3
+      objectReference: {fileID: 0}
     - target: {fileID: 1186990876225971412, guid: c7929072b295ca441a79a84f8ddadac6,
         type: 3}
       propertyPath: m_LocalPosition.x

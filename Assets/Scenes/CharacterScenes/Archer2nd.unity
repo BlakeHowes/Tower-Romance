@@ -306,8 +306,23 @@ PrefabInstance:
         type: 3}
       propertyPath: yarnScripts.Array.data[0]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: f56b94762eca030408922df6f36bda9e,
+      objectReference: {fileID: 2480198943629176163, guid: df064344fc7a22e429690a129ceedae4,
         type: 3}
+    - target: {fileID: 7815762623546955386, guid: 38dbd8dcdabb9034987acf7ba44959bf,
+        type: 3}
+      propertyPath: defaultVariables.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815762623546955386, guid: 38dbd8dcdabb9034987acf7ba44959bf,
+        type: 3}
+      propertyPath: defaultVariables.Array.data[3].name
+      value: flair
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815762623546955386, guid: 38dbd8dcdabb9034987acf7ba44959bf,
+        type: 3}
+      propertyPath: defaultVariables.Array.data[3].type
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38dbd8dcdabb9034987acf7ba44959bf, type: 3}
 --- !u!1001 &899595829
@@ -321,6 +336,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186990876225971415, guid: c7929072b295ca441a79a84f8ddadac6,
+        type: 3}
+      propertyPath: NextScene
+      value: Level3
       objectReference: {fileID: 0}
     - target: {fileID: 1186990876225971412, guid: c7929072b295ca441a79a84f8ddadac6,
         type: 3}

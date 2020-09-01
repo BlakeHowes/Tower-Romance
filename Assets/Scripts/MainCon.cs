@@ -25,6 +25,11 @@ public class MainCon : MonoBehaviour
     private int Currency;
     public Text CurrencyDisplay;
 
+    [SerializeField]
+    private int StartingHealth;
+    private int Health;
+    public Text HealthDisplay;
+
     public void GetTotalEnemies(float numberofenemies)
     {
         TotalEnemies = numberofenemies;
@@ -44,15 +49,22 @@ public class MainCon : MonoBehaviour
         }
     }
 
+    public void RemoveHealth(int damage)
+    {
+        Health -= damage;
+    }
+
     public void Awake()
     {
         Currency += StartingCurrency;
+        Health += StartingHealth;
     }
 
     void Update()
     {
-        CurrencyDisplay.text = ("Money:") + Currency.ToString("");
-        EnemiesLeftDisplay.text = ("Slimes:") + TotalEnemies.ToString("");
+        CurrencyDisplay.text = ("Money: ") + Currency.ToString("");
+        EnemiesLeftDisplay.text = ("Slimes: ") + TotalEnemies.ToString("");
+        HealthDisplay.text = ("Health: ") + Health.ToString("");
 
         if (Input.GetMouseButtonDown(0))
         {

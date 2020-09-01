@@ -1,67 +1,45 @@
 title: Start
 tags: 
 colorID: 0
-position: -451,-622
+position: -936,-774
 ---
 With some warning this time you have the opportunity to prepare in some way before heading over to the archery tower at sunset.
 Would some elegant formal wear or a hand crafted piece of armour be impressive.
 
-[[ answer: Find your finest clothes|Suit]]
-[[ answer: Work on your armour |Armour]]
+[[Find your finest clothes|Suit]]
+[[Work on your armour |Armour]]
 ===
 title: Suit
 tags: 
 colorID: 0
-position: -451,-406
+position: -933,-427
 ---
 You scour through the wardrobe that was provided to you by the royalty upon your appointment. 
 Looking through the bookcase you even uncover a secret closet.
 Now, what to wear?
 
--> Ruffles, lots of ruffles.
-	cuffs, collar, scarf and placket every hem and stitch is helplessly grounded in a very specific period of fashion.
-    <<set $flair to "ruffles">>
-
--> An illicitly over-embellished dress.
-	With some help from the building's magically conjured staff you weren't aware of, you fit into a ballgown that atleast triples your spatial volume
-    <<set $flair to "dress">>
-
--> A tuxedo that's finer than god and twice as shiny.
-	the waistcoat is bulletproof, the aftermath is secondary.
-	Some warpaint and a mask might also complement the look.
-    <<set $flair to "suit">> 
-
-[[Arrival]]
+[[Ruffles, lots of ruffles.|Ruffles]]
+[[An illicitly over-embellished dress.|Dress]]
+[[A tuxedo that's finer than god and twice as shiny.|Tuxedo]]
 ===
 title: Armour
 tags: 
 colorID: 0
-position: -236,-622
+position: -932,-97
 ---
 You have a fairly well fashioned collection of armour pieces mostly stemming from a well reinforced pauldron.
 Around your workshop you collect some pieces close to being finished and decide which to work on
 
--> A gem-encrusted gauntlet.
-	You feel power welling within you and a song about to break out, just don't snap to the beat. 
-	No seriously, don't.
-    <<set $flair to "gauntlet">> 
+[[A gem-encrusted gauntlet.|Gauntlet]]
 
--> A helmet that is unnaturally hot at the tips
-	you hear a whispering that doesn't seem to come from any particular direction.
-	'Be sure to bring me more souls, ashen one.'
-    <<set $flair to "helmet">> 
+[[A helmet that is unnaturally hot at the tips|Helmet]]
 
--> A mysteriously compelling ring.
-	One ring to impress them all and in the darkness be kind to them.
-	You're quite glad that you beat that creature in a game of riddles.
-    <<set $flair to "ring">>
-
-[[Arrival]]
+[[A mysteriously compelling ring.|Ring]]
 ===
 title: Arrival
 tags: 
 colorID: 0
-position: -194,-371
+position: -459,-337
 ---
 Some moments later you are once again at the doorstep of the tower.
 You certainly had no specific aspirations of becoming a knight. 
@@ -89,19 +67,19 @@ Ashe: Let's get this in one take.
 title: Recite
 tags: 
 colorID: 0
-position: -3,-622
+position: -458,-111
 ---
 You are guided to a small pedestal and instructed to kneel and close your eyes.
 
 The oath is laid out on a very large hand-written scroll on the wall behind Ashe. You can probably sneak a few quick looks.
 
-[[ answer: Do your best |improv]]
-[[ answer: Sneak a look |peak]]
+[[Do your best |improv]]
+[[Sneak a look |peak]]
 ===
 title: improv
 tags: 
 colorID: 0
-position: 234,-504
+position: -232,-112
 ---
 I solemnly pledge,
 To cook and eat delicious food,
@@ -117,7 +95,7 @@ Ashe: I suppose we did have plenty to drink last night.
 title: peak
 tags: 
 colorID: 0
-position: 20,-372
+position: -458,108
 ---
 I pledge allegiance to knights of this table yet to be named,
 and do solemnly swear,
@@ -130,7 +108,7 @@ and performing knightly activities.
 title: Welcome
 tags: 
 colorID: 0
-position: 233,-279
+position: -232,109
 ---
 Ashe snaps and Sir Puppers comes forth with a small rapier, tapping you on each shoulder with the flat of the blade.
 
@@ -140,5 +118,68 @@ Ashe: I think
 Ashe: Arise, Mason of the Hammers.
 Ashe giggles. 
 Ashe: That means you should stand up.
-<Set $ARel to 2>
+<<Set $ARel to 2>>
+===
+title: Ruffles
+tags: 
+colorID: 0
+position: -706,-774
+---
+cuffs, collar, scarf and placket every hem and stitch is helplessly grounded in a very specific period of fashion.
+<<set $flair to "ruffles">>
+
+[[Arrival]]
+===
+title: Dress
+tags: 
+colorID: 0
+position: -707,-555
+---
+With some help from the building's magically conjured staff you weren't aware of, you fit into a ballgown that atleast triples your spatial volume
+<<set $flair to "dress">>
+
+[[Arrival]]
+===
+title: Tuxedo
+tags: 
+colorID: 0
+position: -707,-336
+---
+the waistcoat is bulletproof, the aftermath is secondary.
+Some warpaint and a mask might also complement the look.
+<<set $flair to "suit">>
+[[Arrival]]
+===
+title: Gauntlet
+tags: 
+colorID: 0
+position: -707,-115
+---
+You feel power welling within you and a song about to break out, just don't snap to the beat. 
+No seriously, don't.
+<<set $flair to "gauntlet">>
+
+[[Arrival]]
+===
+title: Helmet
+tags: 
+colorID: 0
+position: -710,109
+---
+You hear a whispering that doesn't seem to come from any particular direction.
+'Be sure to bring me more souls, ashen one.'
+<<set $flair to "helmet">>
+
+[[Arrival]]
+===
+title: Ring
+tags: 
+colorID: 0
+position: -710,335
+---
+One ring to impress them all and in the darkness be kind to them.
+You're quite glad that you beat that creature in a game of riddles.
+<<set $flair to "ring">>
+
+[[Arrival]]
 ===
