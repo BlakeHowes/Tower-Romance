@@ -15,7 +15,8 @@ public class MainMenuButtons : MonoBehaviour
     [SerializeField]
     private GameObject AboutCredits;
 
-
+    [SerializeField]
+    private GameObject QuitConfirm;
 
 
 
@@ -88,6 +89,12 @@ public class MainMenuButtons : MonoBehaviour
         MainTitle.SetActive(true);
     }
 
+
+    public void QuitConfirmation()
+    {
+        MainTitle.SetActive(false);
+        QuitConfirm.SetActive(true);
+    }
 
 
 
