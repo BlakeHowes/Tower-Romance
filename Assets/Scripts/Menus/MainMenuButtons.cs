@@ -89,13 +89,31 @@ public class MainMenuButtons : MonoBehaviour
         MainTitle.SetActive(true);
     }
 
-
-    public void QuitConfirmation()
+    private void QuitConfirmationON()
     {
         MainTitle.SetActive(false);
         QuitConfirm.SetActive(true);
     }
 
+    public void QuitConfirmationButton()
+    {
+        QuitConfirmationON();
+    }
+
+    
+   
+
+    public void ExitQuitConfirmation()
+    {
+        QuitConfirmationOFF();
+    }
+
+    private void QuitConfirmationOFF()
+    {
+        
+        QuitConfirm.SetActive(false);
+        MainTitle.SetActive(true);
+    }
 
 
     // Quit Application
