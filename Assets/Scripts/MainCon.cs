@@ -43,7 +43,7 @@ public class MainCon : MonoBehaviour
 
     public void RemoveCurrency(int amount)
     {
-        if(Currency >= amount)
+        if (Currency >= amount)
         {
             Currency -= amount;
         }
@@ -85,7 +85,7 @@ public class MainCon : MonoBehaviour
                 }
                 else
                 {
-                    if(HighlightedObject != null)
+                    if (HighlightedObject != null)
                     {
                         HighlightedObject.GetComponent<Outline>().enabled = false;
                     }
@@ -115,9 +115,9 @@ public class MainCon : MonoBehaviour
             }
         }
 
-        if(SelectionActive == true)
+        if (SelectionActive == true)
         {
-            if(SpriteisOff == true)
+            if (SpriteisOff == true)
             {
                 SpriteManager.instance.TurnOnGridSprites();
                 SpriteisOff = false;

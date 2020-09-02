@@ -80,14 +80,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TypeOfTower: 0
   WhoToTarget: 0
-  Range: 15
+  Range: 5
   Damage: 0.5
   FireDuration: 0.1
   CoolDown: 1
   ShootOrigin: {fileID: 106098860234134567}
   Beam: {fileID: 3016398281443648188}
   Projectile: {fileID: 0}
-  GunModel: {fileID: 0}
 --- !u!33 &1837063478688105904
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -268,11 +267,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1837063478688105906}
     m_Modifications:
-    - target: {fileID: 8129012066685869836, guid: 3e21f7365248d8c4c82c7f8e42c90b71,
-        type: 3}
-      propertyPath: m_Name
-      value: SniperTower
-      objectReference: {fileID: 0}
     - target: {fileID: 5083249784508787999, guid: 3e21f7365248d8c4c82c7f8e42c90b71,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -327,6 +321,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8129012066685869836, guid: 3e21f7365248d8c4c82c7f8e42c90b71,
+        type: 3}
+      propertyPath: m_Name
+      value: SniperTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e21f7365248d8c4c82c7f8e42c90b71, type: 3}
