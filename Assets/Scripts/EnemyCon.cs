@@ -10,7 +10,7 @@ public class EnemyCon : MonoBehaviour
     private GameObject target;
     public GameObject Manager;
     [SerializeField]
-    private int damage;
+    private int damage = 0;
 
     void OnEnable()
     {

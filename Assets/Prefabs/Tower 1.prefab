@@ -77,7 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TypeOfTower: 3
   WhoToTarget: 0
-  Range: 10
+  Range: 4
   Damage: 0
   FireDuration: 0
   CoolDown: 0.5

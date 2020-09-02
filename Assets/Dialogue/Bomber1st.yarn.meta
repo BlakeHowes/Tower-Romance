@@ -8,11 +8,56 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
-  stringIDs: []
-  compilationStatus: 0
-  isSuccesfullyCompiled: 0
+  baseLanguageID: en-US
+  stringIDs:
+  - Bomber1st-Start-0
+  - Bomber1st-Start-1
+  - Bomber1st-Start-2
+  - Bomber1st-Start-3
+  - Bomber1st-Start-4
+  - Bomber1st-Start-5
+  - Bomber1st-Start-6
+  - Bomber1st-Start-7
+  - Bomber1st-Start-8
+  - Bomber1st-Start-9
+  - Bomber1st-Start-10
+  - Bomber1st-Start-11
+  - Bomber1st-Talk-12
+  - Bomber1st-Talk-13
+  - Bomber1st-Talk-14
+  - Bomber1st-Talk-15
+  - Bomber1st-Fireworks-16
+  - Bomber1st-Fireworks-17
+  - Bomber1st-Fireworks-18
+  - Bomber1st-Night-19
+  - Bomber1st-Night-20
+  - Bomber1st-Night-21
+  - Bomber1st-Night-22
+  - Bomber1st-Favourite-23
+  - Bomber1st-Favourite-24
+  - Bomber1st-Favourite-25
+  - Bomber1st-Favourite-26
+  - Bomber1st-Favourite-27
+  - Bomber1st-Favourite-28
+  - Bomber1st-Favourite-29
+  - Bomber1st-Favourite-30
+  - Bomber1st-Favourite-31
+  - Bomber1st-Help-32
+  - Bomber1st-Help-33
+  - Bomber1st-Encourage-34
+  - Bomber1st-Encourage-35
+  - Bomber1st-End-36
+  - Bomber1st-End-37
+  - Bomber1st-End-38
+  - Bomber1st-End-39
+  - Bomber1st-End-40
+  - Bomber1st-End-41
+  - Bomber1st-End-42
+  - Bomber1st-End-43
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
   compilationErrorMessage: "Error on line 13 at position 3:\nmismatched input ']'
     expecting FORMAT_FUNCTION_EXPRESSION_START\r\n[b]BLAZE: HELLO THERE![/b]\r\n  ^"
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: 65dae70a3ffeb4b4cbd3d0ea830e1c4c,
+    type: 3}
   localizations: []

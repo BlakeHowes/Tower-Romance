@@ -103,6 +103,12 @@ public class TowerCon : MonoBehaviour
             return false;
         }
     }
+    //ShowVisual Turret Range
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, Range);
+    }
 
     private void Update()
     {

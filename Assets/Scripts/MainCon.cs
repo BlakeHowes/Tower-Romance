@@ -26,7 +26,7 @@ public class MainCon : MonoBehaviour
     public Text CurrencyDisplay;
 
     [SerializeField]
-    private int StartingHealth;
+    private int StartingHealth = 0;
     private int Health;
     public Text HealthDisplay;
 
