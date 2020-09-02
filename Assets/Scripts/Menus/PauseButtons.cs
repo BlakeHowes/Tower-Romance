@@ -7,10 +7,8 @@ public class PauseButtons : MonoBehaviour
 {
 
 
-    //quick-fix loas scene settings 
 
-    [SerializeField]
-    private int CurrentLevel;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +37,7 @@ public class PauseButtons : MonoBehaviour
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene(CurrentLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
