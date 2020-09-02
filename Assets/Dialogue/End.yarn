@@ -10,13 +10,18 @@ This is the night to celebrate.
 Ashe is preparing food for all of the garrison,
 Blaze is setting up a tremendous fireworks display,
 and Remi, looking down from the tower, organizes the placement of tents.
-
-[[ answer: Spend the night with Ashe |Ashe]]
-[[ answer: Spend the night with Blaze |Blaze]]
-[[ answer: Spend the night with Remi |Remi]]
+-> Find Ashe
+	You suspect Ashe is probably helping to prepare some things for a feast.
+	[[ answer: Spend the night with Ashe |Ashe]]
+-> Find Blaze
+	It shouldnt be hard to find an excited explosives expert at a time like this.
+	[[ answer: Spend the night with Blaze |Blaze]]
+-> Find Remi
+	The glint of the scope reveals your favourite sniper. Time to head to the tower.
+	[[ answer: Spend the night with Remi |Remi]]
 ===
 title: Ashe
-tags: 
+tags:
 colorID: 0
 position: -248,-1322
 ---
