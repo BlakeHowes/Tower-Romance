@@ -933,7 +933,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: How do the controls even work?
+  m_Text: "By default hold middle mouse and drag to pan.\nLeft click on one of the
+    tower buttons and then an available tile\n to place it. You can left click on
+    a tower to select it and \nwhile selected hold middle mouse and drag to rotate
+    \naround the tower."
 --- !u!1 &1485488658889302719
 GameObject:
   m_ObjectHideFlags: 0
