@@ -107,6 +107,8 @@ public class MainCon : MonoBehaviour
                     hit.transform.gameObject.layer = 11;
                     Instantiate(TowerSelectedForPlacement, hit.transform.position, Quaternion.identity);
                     SelectionActive = false;
+
+                    RemoveCurrency(10);
                 }
                 else
                 {

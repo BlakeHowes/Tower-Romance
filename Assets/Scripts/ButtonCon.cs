@@ -13,7 +13,6 @@ public class ButtonCon : MonoBehaviour
     {
         if(Manager.GetComponent<MainCon>().Currency >= 10)
         {
-            Manager.GetComponent<MainCon>().RemoveCurrency(10);
             Manager.GetComponent<MainCon>().SelectionActive = true;
             Manager.GetComponent<MainCon>().AddObjectToSelection(TowerPrefab);
         }
