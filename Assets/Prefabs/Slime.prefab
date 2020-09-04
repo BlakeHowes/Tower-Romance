@@ -63,9 +63,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb56b3f13a3607a438a8f1b7c65ad47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AddToCurrency: 0
   target: {fileID: 0}
-  MainCon: {fileID: 0}
-  damage: 1
 --- !u!33 &2447318289326362773
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -230,16 +229,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5.1022196
       objectReference: {fileID: 0}
-    - target: {fileID: -1315595749860578657, guid: fa6539b23431b96489c0c0a680b8234b,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3d9c5c927280f954982e5fb2478c8bfd, type: 2}
     - target: {fileID: -3815348637671979988, guid: fa6539b23431b96489c0c0a680b8234b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1e792f985b34eed40a6614edb16c80b5, type: 2}
+    - target: {fileID: -1315595749860578657, guid: fa6539b23431b96489c0c0a680b8234b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d9c5c927280f954982e5fb2478c8bfd, type: 2}
     - target: {fileID: 8249115927918959592, guid: fa6539b23431b96489c0c0a680b8234b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

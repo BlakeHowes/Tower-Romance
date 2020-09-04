@@ -19,7 +19,7 @@ public class EnemyCon : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(target.transform.position);
     }
- 
+
     //if touching end target, destroy unit and remove crystal health.
     private void OnTriggerEnter(Collider collision)
     {
