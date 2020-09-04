@@ -120,7 +120,7 @@ Blaze: It's gonna be a good one!
 You arrive home and kick off your boots, vaulting onto your bed.
 You can't help but feel like your life is going to be more exciting from now on.
 
-<set $BRel to 2>
+<<set $BRel to 2>>
 ===
 title: Sleep
 tags: 
