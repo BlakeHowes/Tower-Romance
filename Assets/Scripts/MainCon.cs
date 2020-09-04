@@ -22,7 +22,7 @@ public class MainCon : MonoBehaviour
 
     [SerializeField]
     private int StartingCurrency;
-    private int Currency;
+    public int Currency;
     public Text CurrencyDisplay;
 
     [SerializeField]

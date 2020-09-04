@@ -11,7 +11,11 @@ public class ButtonCon : MonoBehaviour
     private GameObject Manager;
   public void Press()
     {
-        Manager.GetComponent<MainCon>().SelectionActive = true;
-        Manager.GetComponent<MainCon>().AddObjectToSelection(TowerPrefab);
+        if(Manager.GetComponent<MainCon>().Currency >= 10)
+        {
+            Manager.GetComponent<MainCon>().RemoveCurrency(10);
+            Manager.GetComponent<MainCon>().SelectionActive = true;
+            Manager.GetComponent<MainCon>().AddObjectToSelection(TowerPrefab);
+        }
     }
 }

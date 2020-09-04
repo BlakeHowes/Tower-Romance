@@ -10405,7 +10405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441569145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0421, y: -0.1165, z: 0.0184}
+  m_LocalPosition: {x: 0.0415, y: -0.1165, z: 0.0187}
   m_LocalScale: {x: 0.6577624, y: 0.65776247, z: 0.6577624}
   m_Children:
   - {fileID: 200339542}
@@ -10642,7 +10642,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 1
-  m_Color: {r: 1, g: 0.740566, b: 0.93423396, a: 1}
+  m_Color: {r: 1, g: 0.85864466, b: 0.7411765, a: 1}
   m_Intensity: 0.59
   m_Range: 10
   m_SpotAngle: 30
@@ -17455,7 +17455,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.63652545, g: 0.8955373, b: 0.9056604, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -24439,7 +24439,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.5874866, g: 0.68385893, b: 0.7735849, a: 0}
+  m_BackGroundColor: {r: 0.11454254, g: 0.14276488, b: 0.16981131, a: 0}
   m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -24725,7 +24725,8 @@ MonoBehaviour:
   TowerSelectedForPlacement: {fileID: 0}
   CameraTarget: {fileID: 0}
   EnemiesLeftDisplay: {fileID: 2140345738}
-  StartingCurrency: 0
+  StartingCurrency: 20
+  Currency: 0
   CurrencyDisplay: {fileID: 1050750673}
   StartingHealth: 20
   HealthDisplay: {fileID: 286174628}
@@ -52604,7 +52605,7 @@ MonoBehaviour:
     Wave: 5
     EnemyType: {fileID: 2447318289326362766, guid: c14f0a7f3533643469588710561ade82,
       type: 3}
-    SpawnRate: 7.5
+    SpawnRate: 6.875
     SpawnDelay: 5
     TotalSpawned: 30
     Counter: 0
