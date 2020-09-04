@@ -18,7 +18,8 @@ public class MainMenuButtons : MonoBehaviour
     [SerializeField]
     private GameObject QuitConfirm;
 
-
+    [SerializeField]
+    private GameObject BackgroundScroll;
 
 
 
@@ -26,6 +27,9 @@ public class MainMenuButtons : MonoBehaviour
     void Start()
     {
         MainTitle.SetActive(true);
+        ControlInstructions.SetActive(false);
+        AboutCredits.SetActive(false);
+        QuitConfirm.SetActive(false);
     }
 
     // Update is called once per frame
@@ -92,6 +96,7 @@ public class MainMenuButtons : MonoBehaviour
     private void QuitConfirmationON()
     {
         MainTitle.SetActive(false);
+        BackgroundScroll.SetActive(false);
         QuitConfirm.SetActive(true);
     }
 
@@ -112,6 +117,7 @@ public class MainMenuButtons : MonoBehaviour
     {
         
         QuitConfirm.SetActive(false);
+        BackgroundScroll.SetActive(true);
         MainTitle.SetActive(true);
     }
 
