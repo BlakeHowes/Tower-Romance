@@ -32,7 +32,7 @@ public class PauseButtons : MonoBehaviour
     //return to title page (will loose all progress)
     public void Title()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("TitleScreenTheFinal");
     }
 
     public void RestartLevel()

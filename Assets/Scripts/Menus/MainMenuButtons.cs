@@ -21,6 +21,9 @@ public class MainMenuButtons : MonoBehaviour
     [SerializeField]
     private GameObject BackgroundScroll;
 
+    [SerializeField]
+    private GameObject GameModeSelection;
+
 
 
     // Start is called before the first frame update
@@ -30,6 +33,7 @@ public class MainMenuButtons : MonoBehaviour
         ControlInstructions.SetActive(false);
         AboutCredits.SetActive(false);
         QuitConfirm.SetActive(false);
+        GameModeSelection.SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,6 +41,23 @@ public class MainMenuButtons : MonoBehaviour
     {
         
     }
+
+
+    public void SelectMode()
+    {
+        MainTitle.SetActive(false);
+        GameModeSelection.SetActive(true);
+    }
+
+
+
+    public void SelectModeOFF()
+    {
+        GameModeSelection.SetActive(false);
+        MainTitle.SetActive(true);
+    }
+
+
 
 
 
