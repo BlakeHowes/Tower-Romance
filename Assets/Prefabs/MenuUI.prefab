@@ -32,6 +32,7 @@ Transform:
   - {fileID: 593081699312298830}
   - {fileID: 3387228857691313636}
   - {fileID: 3204615565711242960}
+  - {fileID: 4759090974106432044}
   m_Father: {fileID: 587657016504192699}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2489,6 +2490,51 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Tower Defence
+--- !u!1 &6284385197371485845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4759090974106432044}
+  - component: {fileID: 6556675785018485196}
+  m_Layer: 0
+  m_Name: Selections
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4759090974106432044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6284385197371485845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1538799535272860338}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6556675785018485196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6284385197371485845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79fdc83ce9a680c4aadb38bde296794c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerLevel: TestLevel1
+  NovelLevel: Intro
 --- !u!1 &6440907233800115529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,7 +2588,7 @@ MonoBehaviour:
   AboutCredits: {fileID: 6468625063098606695}
   QuitConfirm: {fileID: 3746483272554770398}
   BackgroundScroll: {fileID: 8411960693138571579}
-  GameModeSelection: {fileID: 0}
+  GameModeSelection: {fileID: 354123179761840335}
 --- !u!1 &6468625063098606695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3541,8 +3587,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 566291373258612265}
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 6556675785018485196}
+        m_MethodName: TowerDefence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3747,8 +3793,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 566291373258612265}
-        m_MethodName: ExitQuitConfirmation
+      - m_Target: {fileID: 6556675785018485196}
+        m_MethodName: VisualNovel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

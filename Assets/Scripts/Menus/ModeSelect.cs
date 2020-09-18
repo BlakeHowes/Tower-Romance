@@ -8,10 +8,10 @@ public class ModeSelect : MonoBehaviour
 
 
     [SerializeField]
-    private string TowerLevel;
+    private int TowerLevel;
 
     [SerializeField]
-    private string NovelLevel;
+    private int NovelLevel;
 
 
     public void TowerDefence()

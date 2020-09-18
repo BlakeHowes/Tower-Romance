@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79fdc83ce9a680c4aadb38bde296794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TowerLevel: 
-  NovelLevel: 
+  TowerLevel: 1
+  NovelLevel: 2
 --- !u!4 &442865541
 Transform:
   m_ObjectHideFlags: 0
@@ -351,6 +351,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: VisualNovel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556675785018485196, guid: bd34700e051c34b4eb2050340a33f730,
+        type: 3}
+      propertyPath: TowerLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556675785018485196, guid: bd34700e051c34b4eb2050340a33f730,
+        type: 3}
+      propertyPath: NovelLevel
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd34700e051c34b4eb2050340a33f730, type: 3}
